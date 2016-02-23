@@ -5,13 +5,13 @@
 		<title>Tourney Info</title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="css/app.css">
-
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	</head>
 	<body ng-app="app">
 
 		<div class="Table" ng-controller="TourneyCtrl as vm">
 
-			<div class="Row" ng-repeat="tourney in vm.data | limitTo:6 | orderBy:'-inTheMoney'">
+			<div class="Row" ng-repeat="tourney in vm.data | limitTo:5 | orderBy:'-inTheMoney'">
 				<div class="tournament" ng-class="{'is-itm': tourney.inTheMoney}">
 					<p><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
 				</div>
@@ -25,6 +25,7 @@
 
 		<script src="jquery/dist/jquery.min.js"></script>
 		<script src="angular/angular.min.js"></script>
+		<script src="font-awesome/css/font-awesome.css"></script>
 		<script src="app.js"></script>
 	</body>
 </html>

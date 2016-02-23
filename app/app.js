@@ -51,7 +51,7 @@
 		}
 
 		function updateHtml() {
-			$http.get('./data/tournaments.json')
+			$http.get('tournaments.json')
 				.then(function successCallback(response) {
 					vm.data = response.data;
 				}, function errorCallback(response) {
