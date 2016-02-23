@@ -13,7 +13,7 @@
 
 			<div class="Row" ng-repeat="tourney in vm.data | limitTo:5 | orderBy:'-inTheMoney'">
 				<div class="tournament" ng-class="{'is-itm': tourney.inTheMoney}">
-					<p><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
+					<p class="u-textTruncate"><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
 				</div>
 				<div class="position" ng-class="{'is-itm': tourney.inTheMoney}">
 					<p>{{ tourney.playerPosition }} of {{ tourney.entrantsRemaining }}</p>
