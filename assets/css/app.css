@@ -50,3 +50,13 @@ body {
 .is-itm {
 	color: #80b641;
 }
+
+
+.powered-by {
+	margin: 12px 20px;
+	float: right;
+}
+.jivaro-logo {
+	height: 24px;
+	vertical-align: middle;
+}
