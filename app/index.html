@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- © NightDev 2015 -->
+<html>
+	<head>
+		<title>Tourney Info</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/app.css">
+
+	</head>
+	<body ng-app="app">
+
+		<div class="Table" ng-controller="TourneyCtrl as vm">
+
+			<div class="Row" ng-repeat="tourney in vm.data | limitTo:6 | orderBy:'-inTheMoney'">
+				<div class="tournament" ng-class="{'is-itm': tourney.inTheMoney}">
+					<p><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
+				</div>
+				<div class="position" ng-class="{'is-itm': tourney.inTheMoney}">
+					<p>{{ tourney.playerPosition }} of {{ tourney.entrantsRemaining }}</p>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="jquery/dist/jquery.min.js"></script>
+		<script src="angular/angular.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>

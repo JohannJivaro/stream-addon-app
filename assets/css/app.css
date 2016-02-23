@@ -1,0 +1,52 @@
+body {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #202023;
+}
+
+.Table {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 600;
+	color: #d4d4d4;
+	background-color: #202023;
+	border-radius: 1px;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+	width: 513px;
+	margin: 18px 0;
+}
+
+.Row {
+	overflow: hidden;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+	margin: 0 20px;
+}
+
+.Row:last-child {
+	border: none;
+}
+
+.tournament {
+	float: left;
+	line-height: 30px;
+}
+
+.Row p {
+	margin: 0;
+}
+
+.position {
+	float: right;
+	line-height: 30px;
+	text-align: right;
+}
+
+.is-itm {
+	color: #80b641;
+}
