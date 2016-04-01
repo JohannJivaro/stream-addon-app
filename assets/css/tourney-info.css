@@ -1,0 +1,133 @@
+html {
+	background-color: #202023;
+}
+body {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0px 0;
+	box-sizing: border-box;
+	background-color: #202023;
+}
+
+.Table {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 600;
+	color: #d4d4d4;
+	background-color: #202023;
+	border-radius: 1px;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+	width: 513px;
+	margin: 0;
+	min-height: 500px;
+}
+
+.Row {
+	overflow: hidden;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+	margin: 0 20px;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.Row p {
+	margin: 0;
+}
+
+.tournament {
+	line-height: 32px;
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+	-webkit-align-self: auto;
+	align-self: auto;
+	overflow: hidden;
+}
+
+.position {
+	line-height: 32px;
+	text-align: right;
+	-webkit-flex: 1 0 auto;
+	flex: 1 0 auto;
+	-webkit-align-self: auto;
+	align-self: auto;
+}
+
+.is-itm {
+	color: #80b641;
+}
+
+.powered-by {
+	margin: 12px 20px;
+	float: right;
+}
+
+.jivaro-logo {
+	height: 24px;
+	vertical-align: middle;
+}
+
+/* -------------------- Text utils --------------------  */
+
+/**
+ * Text layout
+ */
+.u-textUpper {
+	text-transform: uppercase !important;
+}
+
+.u-textLower {
+	text-transform: lowercase !important;
+}
+
+.u-textCenter {
+	text-align: center !important;
+}
+
+.u-textLeft {
+	text-align: left !important;
+}
+
+.u-textRight {
+	text-align: right !important;
+}
+
+.u-textMiddle {
+	vertical-align: middle;
+}
+
+.u-cursorPointer {
+	cursor: pointer;
+}
+
+/**
+ * Text truncation
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+.u-textTruncate {
+	max-width: 100%; /* 1 */
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	white-space: nowrap !important;
+	word-wrap: normal !important; /* 2 */
+}
+
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+.u-textBreak {
+	word-wrap: break-word !important;
+}

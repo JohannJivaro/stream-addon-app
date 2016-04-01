@@ -1,133 +1,464 @@
-html {
-	background-color: #202023;
-}
 body {
-	position: relative;
-	overflow: hidden;
-	margin: 0;
-	padding: 18px 0;
-	box-sizing: border-box;
-	background-color: #202023;
+    background-color: #202023;
+    margin: 0;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+    /*overflow: hidden;*/
 }
 
-.Table {
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 18px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 600;
-	color: #d4d4d4;
-	background-color: #202023;
-	border-radius: 1px;
-	padding: 0;
-	height: 100%;
-	overflow: hidden;
-	width: 513px;
-	margin: 0;
-	min-height: 500px;
+div {
+    border: 0px solid #fff;
 }
 
-.Row {
-	overflow: hidden;
-	border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-	margin: 0 20px;
-	display: -webkit-flex;
-	display: flex;
+.container {
+    width: 100%;
+    height: 1080px;
+    display: block;
+    /* background: url("../img/overlay.png") no-repeat; */
 }
 
-.Row p {
-	margin: 0;
+p{
+
+    position: absolute;
+    text-align: middle;
+    bottom:-16px;
+    right:15px;
+    font-size: 24px;
+    text-shadow: 2px 2px 1px #000;
 }
 
-.tournament {
-	line-height: 32px;
-	-webkit-flex: 1 1 auto;
-	flex: 1 1 auto;
-	-webkit-align-self: auto;
-	align-self: auto;
-	overflow: hidden;
+.artist{
+    position: absolute;
+    top:-24px;
+    left:64px;
+    font-size: 18px;
+}
+
+.songname{
+    position: absolute;
+    top:2px;
+    left:64px;
+    font-weight: 100;
+    font-size: 18px;  
+}
+
+}
+.test {
+    position: fixed;
+    top: 84px;
+    left: 597px;
+    width: 400px;
+    height: 400px;
+}
+
+.fa {
+    text-shadow: 0 0 5px rgba(255,255,255,0.7);
+}
+
+
+
+/* ACTIVE TOURNAMENTS */
+.active-tournaments {
+    position: absolute;
+    top: 432px;
+    left: 14px;
 }
 
 .position {
-	line-height: 32px;
-	text-align: right;
-	-webkit-flex: 1 0 auto;
-	flex: 1 0 auto;
-	-webkit-align-self: auto;
-	align-self: auto;
+    position: absolute;
+    top: 432px;
+    left: 509px;
 }
 
-.is-itm {
-	color: #80b641;
+/* SOCIAL MEDIA */
+.twitter {
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    width: 150px;
+    height: 36px;
 }
 
-.powered-by {
-	margin: 12px 20px;
-	float: right;
+.text-span-twitter {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    left: 10px;
+    top: -33px;
 }
 
-.jivaro-logo {
-	height: 24px;
-	vertical-align: middle;
+.fa-span-twitter {
+    font-size: 53px;
+    position: relative;
+    left: -2px;
+    top: -20px;
 }
 
-/* -------------------- Text utils --------------------  */
-
-/**
- * Text layout
- */
-.u-textUpper {
-	text-transform: uppercase !important;
+.instagram {
+    position: absolute;
+    top: 24px;
+    left: 209px;
+    width: 170px;
+    height: 36px;
 }
 
-.u-textLower {
-	text-transform: lowercase !important;
+.text-span-instagram {
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+    left: 20px;
+    top: -22px;
 }
 
-.u-textCenter {
-	text-align: center !important;
+.fa-span-instagram {
+    font-size: 43px;
+    position: relative;
+    left: -1px;
+    top: -13px;
 }
 
-.u-textLeft {
-	text-align: left !important;
+.snapchat {
+    position: absolute;
+    top: 24px;
+    left: 430px;
+    width: 142px;
+    height: 36px;
 }
 
-.u-textRight {
-	text-align: right !important;
+.text-span-snapchat {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    left: 10px;
+    top: -25px;
 }
 
-.u-textMiddle {
-	vertical-align: middle;
+.fa-span-snapchat {
+    font-size: 46px;
+    position: relative;
+    left: -1px;
+    top: -14px;
 }
 
-.u-cursorPointer {
-	cursor: pointer;
+.snapchat-image {
+    position: relative;
+    left: -1px;
+    top: 4px;
+    width: 42px;
+    height: 42px;
 }
 
-/**
- * Text truncation
- *
- * Prevent text from wrapping onto multiple lines, and truncate with an
- * ellipsis.
- *
- * 1. Ensure that the node has a maximum width after which truncation can
- *    occur.
- * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
- *    nodes.
- */
-.u-textTruncate {
-	max-width: 100%; /* 1 */
-	overflow: hidden !important;
-	text-overflow: ellipsis !important;
-	white-space: nowrap !important;
-	word-wrap: normal !important; /* 2 */
+/* SOUNDBAR */
+.eq {
+    position: absolute;
+    top: 24px;
+    left: 1257px;
+    height: 38px;
 }
 
-/**
- * Word breaking
- *
- * Break strings when their length exceeds the width of their container.
- */
-.u-textBreak {
-	word-wrap: break-word !important;
+.live-for {
+    position: absolute;
+    top: 24px;
+    left: 1786px;
+    height: 36px;
+    width: 118px;
 }
+
+.timer {
+    position: relative;
+    left: 50px;
+    top: -46px;
+    border: 0;
+}
+
+.fa-span-hourglass-half {
+    font-size: 37px;
+    position: relative;
+    left: -1px;
+    top: -9px;
+}
+
+.bar {
+    border: 0 !important;
+    background-color: #fff;
+    width: 6px;
+    height: 36px;
+    display: inline-block;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-box-shadow: 0 0 5px rgba(255,255,255,0.7);
+    -moz-box-shadow: 0 0 5px rgba(255,255,255,0.7);
+    box-shadow: 0 0 5px rgba(255,255,255,0.7);
+}
+
+.bar-2 {
+    border: 0 !important;
+    left: 9px;
+}
+
+.bar-3 {
+    border: 0 !important;
+    left: 18px;
+}
+
+.bar-4 {
+    border: 0;
+    left: 27px;
+}
+
+.bar-5 {
+    border: 0;
+    left: 36px;
+}
+
+.bar-6 {
+    border: 0;
+    left: 45px;
+}
+
+.eq {
+    position: absolute;
+    top: 24px;
+    left: 1257px;
+    height: 38px;
+    width: 300px;
+}
+
+
+/* BOTTOM INFO BOXES */
+.donation {
+    position: absolute;
+    top: 984px;
+    left: 588px;
+    height: 24px;
+    width: 288px;
+}
+
+.span-donation {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}
+
+.donation-value-div{
+    position: absolute;
+    top: 1020px;
+    left: 588px;
+    height: 48px;
+    width: 288px;    
+
+}
+.donation-value{
+    position: absolute;
+    left:15px;
+}
+.subscriber {
+    position: absolute;
+    top: 984px;
+    left: 888px;
+    height: 24px;
+    width: 288px;
+}
+
+.span-subscriber {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}
+
+.subscriber-value-div{
+    position: absolute;
+    top: 1020px;
+    left: 888px;
+    height: 48px;
+    width: 288px;    
+
+}
+
+.buyins {
+    position: absolute;
+    top: 984px;
+    left: 1188px;
+    height: 24px;
+    width: 171px;
+}
+
+.span-buyins {
+    position: absolute;
+    top: 6px;
+    right: 3px;
+}
+
+.buyins-value-div{
+    position: absolute;
+    top: 1020px;
+    left: 1188px;
+    height: 48px;
+    width: 171px;    
+
+}
+
+.cashes {
+    position: absolute;
+    top: 984px;
+    left: 1371px;
+    height: 24px;
+    width: 171px;
+}
+
+.span-cashes {
+    position: absolute;
+    top: 6px;
+    right: 3px;
+}
+
+.cashes-value-div{
+    position: absolute;
+    top: 1020px;
+    left: 1371px;
+    height: 48px;
+    width: 171px;    
+
+}
+
+.bankroll {
+    position: absolute;
+    top: 984px;
+    left: 1554px;
+    height: 24px;
+    width: 171px;
+}
+
+.span-bankroll {
+    position: absolute;
+    top: 6px;
+    right: 3px;
+}
+
+.bankroll-value-div{
+    position: absolute;
+    top: 1020px;
+    left: 1554px;
+    height: 48px;
+    width: 171px;    
+
+}
+.profit {
+    position: absolute;
+    top: 984px;
+    left: 1737px;
+    height: 24px;
+    width: 171px;
+    
+}
+
+.span-profit {
+    position: absolute;
+    top: 6px;
+    right: 3px;
+    
+}
+
+.profit-value-div{
+    position: absolute;
+    top: 1020px;
+    left: 1737px;
+    height: 48px;
+    width: 171px;    
+
+}
+
+/*
+.header{
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:1920px;
+  height:12px;
+  background:#262626;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.8)
+
+}
+
+.triangle1{
+position:fixed;
+top:12px;
+left:666px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 51px 70px 0 70px;
+border-color: #262626 transparent transparent transparent;
+
+}
+
+.triangle2{
+position:fixed;
+top:12px;
+left:1105px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 51px 70px 0 70px;
+border-color: #262626 transparent transparent transparent;
+
+}
+
+.logo-header{
+position:fixed;
+top:12px;
+left:736px;
+width: 438px;
+height: 51px;
+background: #262626;
+
+
+}
+
+.table{
+position: fixed;
+top: 72px;
+left: 585px;
+width: 1320px;
+height: 910px;
+box-shadow:0px 0px 0px 3px #262626 inset, 1px 1px 1px 1px rgba(0,0,0,0.6);
+
+}
+
+.chat{
+position: fixed;
+top: 744px;
+left: 12px;
+width: 564px;
+height: 324px;
+box-shadow:0px 0px 0px 3px #262626 inset, 1px 1px 1px 1px rgba(0,0,0,0.6);
+
+}
+
+.tourney-info{
+position: fixed;
+top: 467px;
+left: 12px;
+width: 564px;
+height: 264px;
+box-shadow:0px 0px 0px 3px #262626 inset, 1px 1px 1px 1px rgba(0,0,0,0.6);
+}
+
+.webcam{
+position: fixed;
+top: 72px;
+left: 12px;
+width: 564px;
+height: 324px;
+box-shadow: inset 3px 3px 0px 0px rgba(38,38,38,1), inset -3px 0px 0px 0px rgba(38,38,38,1), 1px 1px 1px 1px rgba(0,0,0,0.6);
+
+
+}
+*/

@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <title>Daniel Mar</title>
     <link href="css/app.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel=
+    "stylesheet" type="text/css">
 </head>
-<body ng-app="app" ng-controller="AppCtrl as vm">
+<body>
     <div class="container">
         <div class="twitter">
             <span class="fa-span-twitter"><i class="fa fa-twitter"></i></span>
@@ -17,21 +20,35 @@
             <span class="fa-span-instagram"><i class="fa fa-instagram"></i></span><span class="text-span-instagram">@danielmar88</span>
         </div>
         <div class="snapchat">
-            <span class="fa-span-snapchat"><img class="snapchat-image" src="img/fi-social-snapchat-512px.svg"></span><span class="text-span-snapchat">@djaniel88</span>
+            <span class="fa-span-snapchat"><img class="snapchat-image" src="assets/fi-social-snapchat-512px.svg"></span><span class="text-span-snapchat">@djaniel88</span>
         </div>
         <div class="live-for">
             <span class="fa-span-hourglass-half"><i class=
             "fa fa-hourglass-half"></i></span>
-            <div class="timer"><span class="hour">{{ vm.data['timer.txt'] }}</span>
+            <div class="timer">
+                <span class="hour">00</span>:<span class=
+                "minute">00</span>:<span class="second">00</span>
             </div>
         </div>
         <div class="eq">
             <span class="bar bar-1"></span> <span class="bar bar-2"></span>
             <span class="bar bar-3"></span> <span class="bar bar-4"></span>
             <span class="bar bar-5"></span> <span class="bar bar-6"></span>
-        <p class="artist">{{ vm.data['artist.txt'] }}</p>
-        <p class="songname">{{ vm.data['songname.txt'] }}</p>
         </div>
+
+        <!-- <div id="div1" class="test">
+        <span>Starting Bankroll</span><input type="text" id="add1" ng-model="vm.bankroll" />
+        <input type="button" name="but1" onclick="copy()" value="Add"/>
+        <div class="control">
+            <button onClick="timer.start(1000)">Start</button> 
+            <button onClick="timer.stop()">Stop</button> 
+            <button onClick="timer.reset(60)">Reset</button> 
+            <button onClick="timer.mode(1)">Count up</button> 
+            <button onClick="timer.mode(0)">Count down</button>
+        </div>    
+        
+  </div>
+  -->
         <div class="active-tournaments">
             <span>Active Tournaments</span>
         </div>
@@ -40,50 +57,38 @@
         </div>
         <div class="donation">
             <span class="span-donation donation-heading">Latest Donation</span>
-        </div>
-        <div class="donation-value-div">
-        	<p class="donation-value">{{ vm.data['donation.txt'] }}</p>
+            <p class="donation-value">{{ vm.data['johannTest.txt'] }}</p>
         </div>
         <div class="subscriber">
             <span class="span-subscriber">Latest Subscriber</span>
         </div>
-        <div class="subscriber-value-div">
-        	<p class="donation-value">{{ vm.data['subscriber.txt'] }}</p>
-        </div>
-
         <div class="buyins">
             <span class="span-buyins">Todays Buy-ins</span>
-       </div>
-        <div class="buyins-value-div">
-        	<p>{{ vm.data['buyins.txt'] }}</p>
         </div>
         <div class="cashes">
             <span class="span-cashes">Todays Cashes</span>
-      </div>
-        <div class="cashes-value-div">
-        	<p>{{ vm.data['cashes.txt'] }}</p>
         </div>
         <div class="bankroll">
             <span class="span-bankroll">Bankroll</span>
-      </div>
-        <div class="bankroll-value-div">
-        	<p>{{ vm.data['bankroll.txt'] }}</p>
         </div>
         <div class="profit">
             <span class="span-profit">Profit 2016</span>
-    	</div>
-        <div class="profit-value-div">
-        	<p>{{ vm.data['profit.txt'] }}</p>
-        </div>
-             
-        <script src="jquery/dist/jquery.min.js"></script>
-        <script src="angular/angular.min.js"></script>
-        <script src="font-awesome/css/font-awesome.css"></script>
-        <script src="app.js"></script>
+        </div><!--
+<div class="updates"><span>Starting Bankroll</span></div>
+<div class="amount"><span id="startingbr">{{ vm.bankroll }}</span></div>
+</div>
+<div class="webcam"></div>
+<div class="tourney-info"></div>
+<div class="chat"></div>
+<div class="table"></div>
+-->
+        <span class="span-donation">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script> 
+        <script src="http://code.jquery.com/jquery-1.6.js" type="text/javascript"></script> 
         <script src="js/app.js" type="text/javascript"></script> 
         <script src="js/timer.js" type="text/javascript"></script> 
-
-
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script> 
+        <script src="app/app.js" type="text/javascript"></script> 
         <script language="javascript">
         //
             var data = new Array();
