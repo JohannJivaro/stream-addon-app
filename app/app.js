@@ -54,7 +54,7 @@
 
 
 		function getData() {
-			$http.get('data.json')
+			$http.get('output.json')
 				.then(function successCallback(response) {
 					vm.data = response.data;
 				}, function errorCallback(response) {

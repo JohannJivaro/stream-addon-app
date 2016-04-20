@@ -1,13 +1,18 @@
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+   text-shadow: 2px 2px 1px #000;*/
+}
+
 body {
-    background-color: #202023;
+    background-color: Transparent;
     margin: 0;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-style: italic;
     font-variant: normal;
-    font-weight: 400;
+    font-weight: 500;
     color: #fff;
-    text-shadow: 2px 2px 1px #000;
+    /* text-shadow: 2px 2px 1px #000; /*
     /*overflow: hidden;*/
 }
 
@@ -19,7 +24,7 @@ div {
     width: 100%;
     height: 1080px;
     display: block;
-    /* background: url("../img/overlay.png") no-repeat; */
+    background: url("../img/overlay.png") no-repeat; 
 }
 
 p{
@@ -29,22 +34,28 @@ p{
     bottom:-16px;
     right:15px;
     font-size: 24px;
-    text-shadow: 2px 2px 1px #000;
+    /* text-shadow: 2px 2px 1px #000; */
 }
 
 .artist{
     position: absolute;
     top:-24px;
-    left:64px;
+    left:9px;
     font-size: 18px;
 }
 
 .songname{
     position: absolute;
-    top:2px;
-    left:64px;
-    font-weight: 100;
-    font-size: 18px;  
+    top:0px;
+    left:9px;
+    font-weight: 300;
+    font-size: 18px;
+    white-space: nowrap;
+    max-width: 100%; /* 1 */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */  
 }
 
 }
@@ -79,7 +90,7 @@ p{
 .twitter {
     position: absolute;
     top: 24px;
-    left: 12px;
+    left: 14px;
     width: 150px;
     height: 36px;
 }
@@ -88,7 +99,7 @@ p{
     display: inline-block;
     position: relative;
     font-size: 18px;
-    left: 10px;
+    left: 6px;
     top: -33px;
 }
 
@@ -102,7 +113,7 @@ p{
 .instagram {
     position: absolute;
     top: 24px;
-    left: 209px;
+    left: 211px;
     width: 170px;
     height: 36px;
 }
@@ -110,8 +121,8 @@ p{
 .text-span-instagram {
     display: inline-block;
     position: relative;
-    font-size: 17px;
-    left: 20px;
+    font-size: 18px;
+    left: 18px;
     top: -22px;
 }
 
@@ -125,7 +136,7 @@ p{
 .snapchat {
     position: absolute;
     top: 24px;
-    left: 430px;
+    left: 432px;
     width: 142px;
     height: 36px;
 }
@@ -134,7 +145,7 @@ p{
     display: inline-block;
     position: relative;
     font-size: 18px;
-    left: 10px;
+    left: 8px;
     top: -25px;
 }
 
@@ -154,24 +165,40 @@ p{
 }
 
 /* SOUNDBAR */
+
 .eq {
     position: absolute;
     top: 24px;
     left: 1257px;
-    height: 38px;
+    height: 36px;
+    width: 54px;
+}
+
+.spotify {
+    position: absolute;
+    top: 24px;
+    left: 1302px;
+    height: 48px;
+    width: 458px;
+    white-space: nowrap;
+    max-width: 100%; /* 1 */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
 }
 
 .live-for {
     position: absolute;
     top: 24px;
-    left: 1786px;
+    left: 1794px;
     height: 36px;
     width: 118px;
 }
 
 .timer {
     position: relative;
-    left: 50px;
+    left: 45px;
     top: -46px;
     border: 0;
 }
@@ -223,15 +250,6 @@ p{
     left: 45px;
 }
 
-.eq {
-    position: absolute;
-    top: 24px;
-    left: 1257px;
-    height: 38px;
-    width: 300px;
-}
-
-
 /* BOTTOM INFO BOXES */
 .donation {
     position: absolute;
@@ -258,6 +276,7 @@ p{
 .donation-value{
     position: absolute;
     left:15px;
+    text-shadow:0px 0px 0px !important;
 }
 .subscriber {
     position: absolute;
@@ -301,7 +320,8 @@ p{
     top: 1020px;
     left: 1188px;
     height: 48px;
-    width: 171px;    
+    width: 171px;
+    text-shadow:0px 0px 0px !important;    
 
 }
 
@@ -324,7 +344,8 @@ p{
     top: 1020px;
     left: 1371px;
     height: 48px;
-    width: 171px;    
+    width: 171px;
+    text-shadow:0px 0px 0px !important;    
 
 }
 
@@ -347,7 +368,8 @@ p{
     top: 1020px;
     left: 1554px;
     height: 48px;
-    width: 171px;    
+    width: 171px;
+    text-shadow:0px 0px 0px !important;    
 
 }
 .profit {
@@ -371,7 +393,8 @@ p{
     top: 1020px;
     left: 1737px;
     height: 48px;
-    width: 171px;    
+    width: 171px;
+    text-shadow:0px 0px 0px !important;    
 
 }
 
