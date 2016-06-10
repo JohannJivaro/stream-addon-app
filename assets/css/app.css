@@ -4,10 +4,10 @@ html, html a {
 }
 
 body {
-    background-color: Transparent;
+    background-color: transparent;
     margin: 0;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     font-style: italic;
     font-variant: normal;
     font-weight: 500;
@@ -17,11 +17,11 @@ body {
 }
 
 div {
-    border: 0px solid #fff;
+    border: 0px solid red;
 }
 
 .container {
-    width: 100%;
+    width: 1920px;
     height: 1080px;
     display: block;
     background: url("../img/overlay.png") no-repeat; 
@@ -76,13 +76,13 @@ p{
 /* ACTIVE TOURNAMENTS */
 .active-tournaments {
     position: absolute;
-    top: 432px;
+    top: 435px;
     left: 14px;
 }
 
 .position {
     position: absolute;
-    top: 432px;
+    top: 435px;
     left: 509px;
 }
 
@@ -191,23 +191,23 @@ p{
 .live-for {
     position: absolute;
     top: 24px;
-    left: 1794px;
+    left: 1776px;
     height: 36px;
-    width: 118px;
+    width: 130px;
 }
 
 .timer {
     position: relative;
-    left: 45px;
-    top: -46px;
+    left: 58px;
+    top: -59px;
     border: 0;
 }
 
 .fa-span-hourglass-half {
-    font-size: 37px;
+    font-size: 47px;
     position: relative;
     left: -1px;
-    top: -9px;
+    top: -16px;
 }
 
 .bar {
@@ -295,7 +295,7 @@ p{
 .top-donation-value-div{
     position: absolute;
     top: 1020px;
-    left: 874px;
+    left: 888px;
     height: 48px;
     width: 288px;
     text-shadow:0px 0px 0px !important;    
@@ -307,7 +307,7 @@ p{
     top: 984px;
     left: 1188px;
     height: 24px;
-    width: 171px;
+    width: 178px;
 }
 
 .span-subscriber {
