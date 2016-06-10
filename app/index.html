@@ -49,6 +49,12 @@
         <div class="donation-value-div">
         	<p class="donation-value">{{ vm.data['most_recent_donator.txt'] }}</p>
         </div>
+        <div class="top-donation">
+            <span class="span-top-donation">Top Donation This Month</span>
+        </div>
+        <div class="top-donation-value-div">
+            <p>{{ vm.data['Bankroll.txt'] }}</p>
+        </div>
         <div class="subscriber">
             <span class="span-subscriber">Latest Subscriber</span>
         </div>
@@ -67,12 +73,6 @@
       </div>
         <div class="cashes-value-div">
         	<p>{{ vm.data['Cashes.txt'] | number }}</p>
-        </div>
-        <div class="bankroll">
-            <span class="span-bankroll">Bankroll</span>
-      </div>
-        <div class="bankroll-value-div">
-        	<p>{{ vm.data['Bankroll.txt'] }}</p>
         </div>
         <div class="profit">
             <span class="span-profit">Profit 2016</span>

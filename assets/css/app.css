@@ -278,7 +278,7 @@ p{
     left:15px;
     text-shadow:0px 0px 0px !important;
 }
-.subscriber {
+.top-donation {
     position: absolute;
     top: 984px;
     left: 888px;
@@ -286,25 +286,49 @@ p{
     width: 288px;
 }
 
-.span-subscriber {
+.span-top-donation {
     position: absolute;
     top: 6px;
     left: 0px;
 }
 
+.top-donation-value-div{
+    position: absolute;
+    top: 1020px;
+    left: 654px;
+    height: 48px;
+    width: 288px;    
+
+}
+
+.subscriber {
+    position: absolute;
+    top: 984px;
+    left: 1188px;
+    height: 24px;
+    width: 171px;
+}
+
+.span-subscriber {
+    position: absolute;
+    top: 6px;
+    right: 35px;
+}
+
 .subscriber-value-div{
     position: absolute;
     top: 1020px;
-    left: 888px;
+    left: 1188px;
     height: 48px;
-    width: 288px;    
+    width: 171px;
+    text-shadow:0px 0px 0px !important;    
 
 }
 
 .buyins {
     position: absolute;
     top: 984px;
-    left: 1188px;
+    left: 1371px;
     height: 24px;
     width: 171px;
 }
@@ -318,7 +342,7 @@ p{
 .buyins-value-div{
     position: absolute;
     top: 1020px;
-    left: 1188px;
+    left: 1371px;
     height: 48px;
     width: 171px;
     text-shadow:0px 0px 0px !important;    
@@ -328,7 +352,7 @@ p{
 .cashes {
     position: absolute;
     top: 984px;
-    left: 1371px;
+    left: 1554px;
     height: 24px;
     width: 171px;
 }
@@ -340,30 +364,6 @@ p{
 }
 
 .cashes-value-div{
-    position: absolute;
-    top: 1020px;
-    left: 1371px;
-    height: 48px;
-    width: 171px;
-    text-shadow:0px 0px 0px !important;    
-
-}
-
-.bankroll {
-    position: absolute;
-    top: 984px;
-    left: 1554px;
-    height: 24px;
-    width: 171px;
-}
-
-.span-bankroll {
-    position: absolute;
-    top: 6px;
-    right: 3px;
-}
-
-.bankroll-value-div{
     position: absolute;
     top: 1020px;
     left: 1554px;
