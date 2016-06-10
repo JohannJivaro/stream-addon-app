@@ -53,7 +53,7 @@
             <span class="span-top-donation">Top Donation This Month</span>
         </div>
         <div class="top-donation-value-div">
-            <p>{{ vm.data['Bankroll.txt'] }}</p>
+            <p>{{ vm.data['30day_top_donator.txt'] }}</p>
         </div>
         <div class="subscriber">
             <span class="span-subscriber">Latest Subscriber</span>
@@ -66,19 +66,19 @@
             <span class="span-buyins">Todays Buy-ins</span>
        </div>
         <div class="buyins-value-div">
-        	<p>{{ vm.data['Buy-ins.txt'] | number }}</p>
+        	<p>${{ vm.data['Buy-ins.txt'] | number }}</p>
         </div>
         <div class="cashes">
             <span class="span-cashes">Todays Cashes</span>
       </div>
         <div class="cashes-value-div">
-        	<p>{{ vm.data['Cashes.txt'] | number }}</p>
+        	<p>${{ vm.data['Cashes.txt'] | number }}</p>
         </div>
         <div class="profit">
             <span class="span-profit">Profit 2016</span>
     	</div>
         <div class="profit-value-div">
-        	<p>{{ vm.data['Profit.txt'] | number }}</p>
+        	<p>${{ vm.data['Profit.txt'] | number }}</p>
         </div>
              
         <script src="jquery/dist/jquery.min.js"></script>

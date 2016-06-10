@@ -295,9 +295,10 @@ p{
 .top-donation-value-div{
     position: absolute;
     top: 1020px;
-    left: 654px;
+    left: 874px;
     height: 48px;
-    width: 288px;    
+    width: 288px;
+    text-shadow:0px 0px 0px !important;    
 
 }
 
