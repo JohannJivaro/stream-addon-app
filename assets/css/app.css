@@ -27,16 +27,6 @@ div {
     background: url("../img/overlay.png") no-repeat; 
 }
 
-p{
-
-    position: absolute;
-    text-align: middle;
-    bottom:-16px;
-    right:15px;
-    font-size: 24px;
-    /* text-shadow: 2px 2px 1px #000; */
-}
-
 .artist{
     position: absolute;
     top:-24px;
@@ -67,11 +57,9 @@ p{
     height: 400px;
 }
 
-.fa {
+.fa-glow {
     text-shadow: 0 0 5px rgba(255,255,255,0.7);
 }
-
-
 
 /* ACTIVE TOURNAMENTS */
 .active-tournaments {
@@ -188,6 +176,8 @@ p{
     word-wrap: normal !important; /* 2 */
 }
 
+
+/* LIVE FOR */
 .live-for {
     position: absolute;
     top: 24px;
@@ -259,9 +249,9 @@ p{
     width: 288px;
 }
 
-.span-donation {
+.span-bottom-text {
     position: absolute;
-    top: 6px;
+    top: 4px;
     left: 0px;
 }
 
@@ -273,23 +263,30 @@ p{
     width: 288px;    
 
 }
-.donation-value{
+
+.bottom-left-value{
+    font-size: 24px;
     position: absolute;
-    left:15px;
+    left:12px;
+    top:-18px;
     text-shadow:0px 0px 0px !important;
 }
+
+.bottom-right-value{
+    font-size: 24px;
+    position: absolute;
+    right:12px;
+    top:-18px;
+    text-shadow:0px 0px 0px !important;
+}
+
+
 .top-donation {
     position: absolute;
     top: 984px;
     left: 888px;
     height: 24px;
     width: 288px;
-}
-
-.span-top-donation {
-    position: absolute;
-    top: 6px;
-    left: 0px;
 }
 
 .top-donation-value-div{
@@ -307,13 +304,7 @@ p{
     top: 984px;
     left: 1188px;
     height: 24px;
-    width: 178px;
-}
-
-.span-subscriber {
-    position: absolute;
-    top: 6px;
-    right: 35px;
+    width: 288px;
 }
 
 .subscriber-value-div{
@@ -321,7 +312,7 @@ p{
     top: 1020px;
     left: 1188px;
     height: 48px;
-    width: 171px;
+    width: 288px;
     text-shadow:0px 0px 0px !important;    
 
 }
@@ -329,23 +320,23 @@ p{
 .buyins {
     position: absolute;
     top: 984px;
-    left: 1371px;
+    left: 1488px;
     height: 24px;
-    width: 171px;
+    width: 132px;
 }
 
-.span-buyins {
+.span-bottom-text-right {
     position: absolute;
-    top: 6px;
+    top: 4px;
     right: 3px;
 }
 
 .buyins-value-div{
     position: absolute;
     top: 1020px;
-    left: 1371px;
+    left: 1488px;
     height: 48px;
-    width: 171px;
+    width: 132px;
     text-shadow:0px 0px 0px !important;    
 
 }
@@ -353,51 +344,39 @@ p{
 .cashes {
     position: absolute;
     top: 984px;
-    left: 1554px;
+    left: 1632px;
     height: 24px;
-    width: 171px;
-}
-
-.span-cashes {
-    position: absolute;
-    top: 6px;
-    right: 3px;
+    width: 132px;
 }
 
 .cashes-value-div{
     position: absolute;
     top: 1020px;
-    left: 1554px;
+    left: 1632px;
     height: 48px;
-    width: 171px;
+    width: 132px;
     text-shadow:0px 0px 0px !important;    
 
 }
 .profit {
     position: absolute;
     top: 984px;
-    left: 1737px;
+    left: 1776px;
     height: 24px;
-    width: 171px;
-    
-}
-
-.span-profit {
-    position: absolute;
-    top: 6px;
-    right: 3px;
+    width: 132px;
     
 }
 
 .profit-value-div{
     position: absolute;
     top: 1020px;
-    left: 1737px;
+    left: 1776px;
     height: 48px;
-    width: 171px;
+    width: 132px;
     text-shadow:0px 0px 0px !important;    
 
 }
+
 
 /*
 .header{
