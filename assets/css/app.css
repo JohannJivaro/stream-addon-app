@@ -17,7 +17,7 @@ body {
 }
 
 div {
-    border: 0px solid red;
+    border: 1px solid red;
 }
 
 .container {
@@ -60,6 +60,26 @@ div {
 .fa-glow {
     text-shadow: 0 0 5px rgba(255,255,255,0.7);
 }
+
+/* SUB COUNTDOWN */
+
+.sub-countdown
+{
+    position: absolute;
+    top: 72px;
+    left: 12px;
+    width: 564px;
+    height: 36px;
+}
+
+.text-span-sub-countdown
+{
+    position: relative;
+    top: 4px;
+    left: 6px;
+}
+
+
 
 /* ACTIVE TOURNAMENTS */
 .active-tournaments {
@@ -134,7 +154,7 @@ div {
     position: relative;
     font-size: 18px;
     left: 8px;
-    top: -25px;
+    top: -22px;
 }
 
 .fa-span-snapchat {
