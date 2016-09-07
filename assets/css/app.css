@@ -40,6 +40,7 @@ div {
     left:9px;
     font-weight: 300;
     font-size: 18px;
+    line-height: 23px;
     white-space: nowrap;
     max-width: 100%; /* 1 */
     overflow: hidden !important;
@@ -105,8 +106,8 @@ div {
     display: inline-block;
     position: relative;
     font-size: 18px;
-    left: 6px;
-    top: -33px;
+    left: 53px;
+    top: 3px;
 }
 
 .fa-span-twitter {
@@ -128,8 +129,8 @@ div {
     display: inline-block;
     position: relative;
     font-size: 18px;
-    left: 18px;
-    top: -22px;
+    left: 53px;
+    top: 3px;
 }
 
 .fa-span-instagram {
@@ -151,8 +152,8 @@ div {
     display: inline-block;
     position: relative;
     font-size: 18px;
-    left: 8px;
-    top: -22px;
+    left: 53px;
+    top: 3px;
 }
 
 .fa-span-snapchat {
@@ -207,7 +208,7 @@ div {
 .timer {
     position: relative;
     left: 58px;
-    top: -59px;
+    top: 4px;
     border: 0;
 }
 
