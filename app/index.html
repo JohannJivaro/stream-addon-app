@@ -6,140 +6,181 @@
     <link href="css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="css/tourney-info.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
+
 </head>
 <body ng-app="app" ng-controller="AppCtrl as vm">
 
 
 <!-- Main Container -->
 
-        <div class="container">
+<div class="container">
 
-<!-- Main Social Media -->
-        <div class="twitter">
-            <span class="text-span-twitter">djaniel88</span>
-        </div>
-        <div class="instagram">
-            <span class="text-span-instagram">danielmar88</span>
-        </div>
-        <div class="snapchat">
-            <span class="text-span-snapchat">danielmarpoker</span>
-        </div>
+    <!--&lt;!&ndash; Main Social Media &ndash;&gt;-->
+    <!--<div class="twitter">-->
+    <!--<span class="text-span-twitter">djaniel88</span>-->
+    <!--</div>-->
+    <!--<div class="instagram">-->
+    <!--<span class="text-span-instagram">danielmar88</span>-->
+    <!--</div>-->
+    <!--<div class="snapchat">-->
+    <!--<span class="text-span-snapchat">danielmarpoker</span>-->
+    <!--</div>-->
 
-<!-- Live For Timer -->
+    <!--Social Slideshow-->
 
-        <div class="live-for">
-            <div class="timer"><span class="hour">{{ vm.data['ChronoUp.txt'] }}</span>
+    <div id="slideshow" class="twitter">
+        <div class="slide">
+            <div class="slide-figure">
+                <img src="../img/twitter.png">
+            </div>
+            <div class="slide-text">
+                <span class="slide-text-inner">djaniel88</span>
             </div>
         </div>
 
-<!-- Music -->
-        <div class="spotify">
-            <p class="artist">{{ vm.data['Snip_Artist.txt'] }}</p>
-            <p class="songname">{{ vm.data['Snip_Track.txt'] }}</p>
-        </div>
-
- <!-- Sub Countdown
-            <div class="sub-countdown">
-                <span class="text-span-sub-countdown">{{ vm.data['total_subscriber_count.txt'] }}</span>
+        <div class="slide">
+            <div class="slide-figure">
+                <img src="../img/snapchat.png">
             </div>
--->
-
-<!-- Active Tournaments -->
-        <div class="active-tournaments">
-            <span>Active Tournaments</span>
-        </div>
-        <div class="position">
-            <span>Position</span>
-        </div>
-
-            <div class="Table" ng-controller="TourneyCtrl as vm">
-
-                <div class="Row" ng-repeat="tourney in vm.data | limitTo:6 | orderBy:'-inTheMoney'">
-                    <div class="tournament" ng-class="{'is-itm': tourney.inTheMoney}">
-                        <p class="u-textTruncate"><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
-                    </div>
-                    <div class="position-tourney-info" ng-class="{'is-itm': tourney.inTheMoney}">
-                        <p>{{ tourney.playerPosition }} of {{ tourney.entrantsRemaining }}</p>
-                    </div>
-                </div>
-                <p class="powered-by">Powered by <img src="img/logo.svg" class="jivaro-logo"></p>
-
+            <div class="slide-text social-text">
+                <span class="slide-text-inner">djanielmarpoker</span>
             </div>
-
-<!-- Donations -->
-        <div class="donation">
-            <span class="span-bottom-text">Latest Donation</span>
         </div>
 
-        <div class="donation-value-div">
-        	<p class="bottom-left-value">{{ vm.data['most_recent_donator.txt'] }}</p>
+        <div class="slide">
+            <div class="slide-figure">
+                <img src="../img/instagram.png">
+            </div>
+            <div class="slide-text">
+                <span class="slide-text-inner">danielmar88</span>
+            </div>
         </div>
-
-<!-- Top Donations -->
-        <div class="top-donation">
-            <span class="span-bottom-text">Top Donation This Month</span>
-        </div>
-
-        <div class="top-donation-value-div">
-            <p class="bottom-left-value">{{ vm.data['30day_top_donator.txt'] }}</p>
-        </div>
-
-<!-- Subscribers -->
-        <div class="subscriber">
-            <span class="span-bottom-text">Latest Subscriber</span>
-        </div>
-
-        <div class="subscriber-value-div">
-        	<p class="bottom-left-value">{{ vm.data['most_recent_subscriber.txt'] }}</p>
-        </div>
-
-<!-- Buyins -->
-        <div class="buyins">
-            <span class="span-bottom-text-right">Todays Buy-ins</span>
-       </div>
-
-        <div class="buyins-value-div">
-        	<p class="bottom-right-value">${{ vm.data['Buy-ins.txt'] | number }}</p>
-        </div>
-
-<!-- Cashes -->
-      <div class="cashes">
-            <span class="span-bottom-text-right">Todays Cashes</span>
-      </div>
-
-        <div class="cashes-value-div">
-        	<p class="bottom-right-value">${{ vm.data['Cashes.txt'] | number }}</p>
-        </div>
-
-<!-- Profit -->
-        <div class="profit">
-            <span class="span-bottom-text-right">Profit 2017</span>
-    	</div>
-
-        <div class="profit-value-div">
-        	<p class="bottom-right-value">${{ vm.data['Profit.txt'] | number }}</p>
-        </div>
-
-<!-- Scripts -->
-        <script src="jquery/dist/jquery.min.js"></script>
-        <script src="angular/angular.min.js"></script>
-        <script src="font-awesome/css/font-awesome.css"></script>
-        <script src="app.js"></script>
-        <!--<script src="js/app.js" type="text/javascript"></script> -->
-        <script src="js/timer.js" type="text/javascript"></script>
-        <script language="javascript">
-        //
-            var data = new Array();
-            function copy()
-            {
-
-                data = document.getElementById('add1').value; 
-                document.getElementById('startingbr').innerHTML = data;  document.getElementById('startingbr').innerHTML= document.getElementById('add1').value;
-        //                    return true;
-            }
-        </script>
+        <!--<div class="slide">-->
+            <!--<div class="slide-figure">-->
+                <!--<img src="../img/sk-logo.png">-->
+            <!--</div>-->
+            <!--<div class="slide-text sk-text">-->
+                <!--<span class="slide-text-inner"><img src="../img/sk-text.png"></span>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
+
+    <!-- Live For Timer -->
+
+    <div class="live-for">
+        <div class="timer"><span class="hour">{{ vm.data['ChronoUp.txt'] }}</span>
+        </div>
+    </div>
+
+    <!-- Music -->
+    <div class="spotify">
+        <p class="artist">{{ vm.data['Snip_Artist.txt'] }}</p>
+        <p class="songname">{{ vm.data['Snip_Track.txt'] }}</p>
+    </div>
+
+    <!-- Sub Countdown
+               <div class="sub-countdown">
+                   <span class="text-span-sub-countdown">{{ vm.data['total_subscriber_count.txt'] }}</span>
+               </div>
+   -->
+
+    <!-- Active Tournaments -->
+    <div class="active-tournaments">
+        <span>Active Tournaments</span>
+    </div>
+    <div class="position">
+        <span>Position</span>
+    </div>
+
+    <div class="Table" ng-controller="TourneyCtrl as vm">
+
+        <div class="Row" ng-repeat="tourney in vm.data | limitTo:6 | orderBy:'-inTheMoney'">
+            <div class="tournament" ng-class="{'is-itm': tourney.inTheMoney}">
+                <p class="u-textTruncate"><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
+            </div>
+            <div class="position-tourney-info" ng-class="{'is-itm': tourney.inTheMoney}">
+                <p>{{ tourney.playerPosition }} of {{ tourney.entrantsRemaining }}</p>
+            </div>
+        </div>
+        <p class="powered-by">Powered by <img src="img/logo.svg" class="jivaro-logo"></p>
+
+    </div>
+
+    <!-- Donations -->
+    <div class="donation">
+        <span class="span-bottom-text">Latest Donation</span>
+    </div>
+
+    <div class="donation-value-div">
+        <p class="bottom-left-value">{{ vm.data['most_recent_donator.txt'] }}</p>
+    </div>
+
+    <!-- Top Donations -->
+    <div class="top-donation">
+        <span class="span-bottom-text">Top Donation This Month</span>
+    </div>
+
+    <div class="top-donation-value-div">
+        <p class="bottom-left-value">{{ vm.data['30day_top_donator.txt'] }}</p>
+    </div>
+
+    <!-- Subscribers -->
+    <div class="subscriber">
+        <span class="span-bottom-text">Latest Subscriber</span>
+    </div>
+
+    <div class="subscriber-value-div">
+        <p class="bottom-left-value">{{ vm.data['most_recent_subscriber.txt'] }}</p>
+    </div>
+
+    <!-- Buyins -->
+    <div class="buyins">
+        <span class="span-bottom-text-right">Todays Buy-ins</span>
+    </div>
+
+    <div class="buyins-value-div">
+        <p class="bottom-right-value">${{ vm.data['Buy-ins.txt'] | number }}</p>
+    </div>
+
+    <!-- Cashes -->
+    <div class="cashes">
+        <span class="span-bottom-text-right">Todays Cashes</span>
+    </div>
+
+    <div class="cashes-value-div">
+        <p class="bottom-right-value">${{ vm.data['Cashes.txt'] | number }}</p>
+    </div>
+
+    <!-- Profit -->
+    <div class="profit">
+        <span class="span-bottom-text-right">Profit 2017</span>
+    </div>
+
+    <div class="profit-value-div">
+        <p class="bottom-right-value">${{ vm.data['Profit.txt'] | number }}</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="angular/angular.min.js"></script>
+    <script src="font-awesome/css/font-awesome.css"></script>
+    <script src="app.js"></script>
+    <!--<script src="js/app.js" type="text/javascript"></script> -->
+    <script src="js/timer.js" type="text/javascript"></script>
+    <script src="js/slides.js" type="text/javascript"></script>
+    <script language="javascript">
+        //
+        var data = new Array();
+        function copy() {
+
+            data = document.getElementById('add1').value;
+            document.getElementById('startingbr').innerHTML = data;
+            document.getElementById('startingbr').innerHTML = document.getElementById('add1').value;
+            //                    return true;
+        }
+    </script>
+</div>
 </body>
 </html>
