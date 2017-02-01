@@ -12,5 +12,5 @@ $(function () {
             .fadeIn(3000)
             .end()
             .appendTo('#slideshow');
-    }, 5000);
+    }, 6000);
 });

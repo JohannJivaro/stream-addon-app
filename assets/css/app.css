@@ -121,14 +121,20 @@ div {
     width: 60px;
 }
 
+slide-figure-sk {
+    display: block;
+    align-items: center;
+    border:0px solid green;
+    width: 60px;
+}
 .slide-text {
     border:0px solid blue;
 }
 
-.sk-text {
-    position:relative;
-    top:4px;
-}
+/*.sk-text {*/
+    /*position:relative;*/
+    /*top:4px;*/
+/*}*/
 
 
 /* SOUNDBAR */
