@@ -165,13 +165,13 @@ slide-figure-sk {
 /* LIVE FOR */
 .live-for {
     position: absolute;
-    top: 24px;
-    left: 1776px;
+    top: 26px;
+    left: 1777px;
     height: 36px;
     width: 130px;
 }
 
-.timer {
+.timer-right {
     position: relative;
     left: 58px;
     top: 4px;
