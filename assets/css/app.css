@@ -255,6 +255,10 @@ slide-figure-sk {
     left:12px;
     top:-18px;
     text-shadow:0px 0px 0px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    
 }
 
 .bottom-right-value{
