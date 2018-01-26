@@ -104,6 +104,9 @@
 				if(tourn.entrants === 'acr') {
 					if(!vm.memory[tourn.tourneyid]) {
 						vm.memory[tourn.tourneyid] = tourn.entrantsRemaining;
+					} else if(vm.memory[tourn.tourneyid] < tourn.entrantsRemaining) {
+						// this happens when playing rebuy/latereg
+						vm.memory[tourn.tourneyid] = tourn.entrantsRemaining;
 					}
 					tourn.entrants = vm.memory[tourn.tourneyid];
 				}
