@@ -85,6 +85,7 @@
 		// Public ViewModel
 		// --------------------------------------------------
 		vm.data = [];
+		vm.memory = {};
 
 		// Run
 		// --------------------------------------------------
@@ -98,10 +99,25 @@
 			setDataWatcher();
 		}
 
+		function setData(data) {
+			data.forEach(tourn => {
+				if(tourn.entrants === 'acr') {
+					if(!vm.memory[tourn.tourneyid]) {
+						vm.memory[tourn.tourneyid] = tourn.entrantsRemaining;
+					} else if(vm.memory[tourn.tourneyid] < tourn.entrantsRemaining) {
+						// this happens when playing rebuy/latereg
+						vm.memory[tourn.tourneyid] = tourn.entrantsRemaining;
+					}
+					tourn.entrants = vm.memory[tourn.tourneyid];
+				}
+			});
+			vm.data = data;
+		}
+
 		function updateHtml() {
 			$http.get('tournaments.json')
 				.then(function successCallback(response) {
-					vm.data = response.data;
+					setData(response.data);
 				}, function errorCallback(response) {
 					console.log('error', response);
 				});
