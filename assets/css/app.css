@@ -39,7 +39,7 @@ div {
     width: 1920px;
     height: 1080px;
     display: block;
-    background: url("../img/overlay.png") no-repeat;
+    background: url("../img/overlay.svg") no-repeat;
 }
 
 /* HEADER */
