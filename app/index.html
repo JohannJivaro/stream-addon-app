@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Daniel Mar</title>
     <link href="css/app.css" rel="stylesheet">
+    <link href="http://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet" type="text/css" />
+    <link href="http://allfont.net/allfont.css?fonts=agency-fb-bold" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/tourney-info.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
@@ -17,68 +19,68 @@
 
 <div class="container">
 
-    <!--&lt;!&ndash; Main Social Media &ndash;&gt;-->
-    <!--<div class="twitter">-->
-    <!--<span class="text-span-twitter">djaniel88</span>-->
-    <!--</div>-->
-    <!--<div class="instagram">-->
-    <!--<span class="text-span-instagram">danielmar88</span>-->
-    <!--</div>-->
-    <!--<div class="snapchat">-->
-    <!--<span class="text-span-snapchat">danielmarpoker</span>-->
-    <!--</div>-->
-
-    <!--Social Slideshow-->
-
-    <div id="slideshow" class="twitter">
-        <div class="slide">
-            <div class="slide-figure">
-                <img src="../img/twitter.png">
-            </div>
-            <div class="slide-text">
-                <span class="slide-text-inner">djaniel88</span>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="slide-figure">
-                <img src="../img/snapchat.png">
-            </div>
-            <div class="slide-text social-text">
-                <span class="slide-text-inner">djaniel88</span>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="slide-figure">
-                <img src="../img/instagram.png">
-            </div>
-            <div class="slide-text">
-                <span class="slide-text-inner">djaniel88</span>
-            </div>
-        </div>
-        
-    <div class="slide">
-            <div class="slide-figure-sk">
-                <img src="../img/sk-logo.png">
-            </div>
-            <div class="slide-text sk-text">
-                <span class="slide-text-inner"><img src="../img/sk-text.png"></span>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="slide-figure-sk">
-                <img src="../img/fairvape.png">
-            </div>
-
-        </div>
+    <!--Main Social Media-->
+    <div class="twitter">
+        <span class="text-span-twitter">@djaniel88</span>
+    </div>
+    <div class="instagram">
+        <span class="text-span-instagram">@danielmar88</span>
+    </div>
+    <div class="snapchat">
+        <span class="text-span-snapchat">@djaniel88</span>
     </div>
 
-    <!-- Live For Timer -->
+    <!--Social Slideshow-->
+    <!--
+        <div id="slideshow" class="twitter">
+            <div class="slide">
+                <div class="slide-figure">
+                    <img src="../img/twitter.png">
+                </div>
+                <div class="slide-text">
+                    <span class="slide-text-inner">djaniel88</span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-figure">
+                    <img src="../img/snapchat.png">
+                </div>
+                <div class="slide-text social-text">
+                    <span class="slide-text-inner">djaniel88</span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-figure">
+                    <img src="../img/instagram.png">
+                </div>
+                <div class="slide-text">
+                    <span class="slide-text-inner">djaniel88</span>
+                </div>
+            </div>
+
+        <div class="slide">
+                <div class="slide-figure-sk">
+                    <img src="../img/sk-logo.png">
+                </div>
+                <div class="slide-text sk-text">
+                    <span class="slide-text-inner"><img src="../img/sk-text.png"></span>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-figure-sk">
+                    <img src="../img/fairvape.png">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Live For Timer -->
 
     <div class="live-for">
-        <div class="timer-right"><span class="hour">{{ vm.data['ChronoUp.txt'] }}</span>
-        </div>
+        <p class="artist">Live For</p>
+        <p class="songname">{{ vm.data['ChronoUp.txt'] }}</p>
     </div>
 
     <!-- Music -->
@@ -94,28 +96,29 @@
    -->
 
     <!-- Active Tournaments -->
+    <!--
     <div class="active-tournaments">
-        <span>Active Tournaments</span>
-    </div>
-    <div class="position">
-        <span>Position</span>
-    </div>
+       <span>Active Tournaments</span>
+   </div>
+   <div class="position">
+       <span>Position</span>
+   </div>
 
-    <div class="Table" ng-controller="TourneyCtrl as vm">
+   <div class="Table" ng-controller="TourneyCtrl as vm">
 
-        <div class="Row" ng-repeat="tourney in vm.data | limitTo:6 | orderBy:'-inTheMoney'">
-            <div class="tournament" ng-class="{'is-itm': tourney.inTheMoney}">
-                <p class="u-textTruncate"><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
-            </div>
-            <div class="position-tourney-info" ng-class="{'is-itm': tourney.inTheMoney}">
-                <p>{{ tourney.playerPosition }} of {{ tourney.entrantsRemaining }}</p>
-            </div>
-        </div>
-        <p class="powered-by">Powered by <img src="img/logo.svg" class="jivaro-logo"></p>
+       <div class="Row" ng-repeat="tourney in vm.data | limitTo:6 | orderBy:'-inTheMoney'">
+           <div class="tournament" ng-class="{'is-itm': tourney.inTheMoney}">
+               <p class="u-textTruncate"><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
+           </div>
+           <div class="position-tourney-info" ng-class="{'is-itm': tourney.inTheMoney}">
+               <p>{{ tourney.playerPosition }} of {{ tourney.entrantsRemaining }}</p>
+           </div>
+       </div>
+       <p class="powered-by">Powered by <img src="img/logo.svg" class="jivaro-logo"></p>
 
-    </div>
+   </div>
 
-    <!-- Donations -->
+   <!-- Donations -->
     <div class="donation">
         <span class="span-bottom-text">Latest Donation</span>
     </div>
@@ -144,29 +147,29 @@
 
     <!-- Buyins -->
     <div class="buyins">
-        <span class="span-bottom-text-right">Todays Buy-ins</span>
+        <span class="span-bottom-text">Todays Buy-ins</span>
     </div>
 
     <div class="buyins-value-div">
-        <p class="bottom-right-value">${{ vm.data['Buy-Ins.txt'] | number }}</p>
+        <p class="bottom-left-value">${{ vm.data['Buy-Ins.txt'] | number }}</p>
     </div>
 
     <!-- Cashes -->
     <div class="cashes">
-        <span class="span-bottom-text-right">Todays Cashes</span>
+        <span class="span-bottom-text">Todays Cashes</span>
     </div>
 
     <div class="cashes-value-div">
-        <p class="bottom-right-value">${{ vm.data['Cashes.txt'] | number }}</p>
+        <p class="bottom-left-value">${{ vm.data['Cashes.txt'] | number }}</p>
     </div>
 
     <!-- Profit -->
     <div class="profit">
-        <span class="span-bottom-text-right">Profit 2017</span>
+        <span class="span-bottom-text">Bankroll</span>
     </div>
 
     <div class="profit-value-div">
-        <p class="bottom-right-value">${{ vm.data['Profit.txt'] | number }}</p>
+        <p class="bottom-left-value">${{ vm.data['Bankroll.txt'] | number }}</p>
     </div>
 
     <!-- Scripts -->

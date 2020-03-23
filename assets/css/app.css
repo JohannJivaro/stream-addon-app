@@ -1,17 +1,14 @@
 html, html a {
     -webkit-font-smoothing: antialiased !important;
-    text-shadow: 2px 2px 1px #000;*/
+    /*text-shadow: 2px 2px 1px #000;*/
 }
 
 body {
     background-color: transparent;
     margin: 0;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 19px;
-    font-style: italic;
-    font-variant: normal;
-    font-weight: 500;
-    color: #fff;
+    font-family: 'Agency FB','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: #DAD8EA;
     /* text-shadow: 2px 2px 1px #000; /*
     /*overflow: hidden;*/
 }
@@ -24,29 +21,51 @@ div {
     width: 1920px;
     height: 1080px;
     display: block;
-    background: url("../img/overlay.png") no-repeat; 
+    background: url("../img/overlay.png") no-repeat;
 }
+
+/* HEADER */
+
+.twitter{
+    position: absolute;
+    top: 17px;
+    left: 60px;
+}
+
+.snapchat{
+    position: absolute;
+    top: 17px;
+    left: 499px;
+}
+
+.instagram{
+    position: absolute;
+    top: 17px;
+    left: 280px;
+}
+
 
 .artist{
     position: absolute;
-    top:-24px;
-    left:9px;
+    top:-20px;
+    left:0px;
     font-size: 18px;
 }
 
 .songname{
     position: absolute;
-    top:0px;
-    left:9px;
-    font-weight: 300;
-    font-size: 18px;
+    top:-4px;
+    left:0px;
+    font-family: 'Agency FB Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*font-weight: 300;*/
+    font-size: 20px;
     line-height: 23px;
     white-space: nowrap;
     max-width: 100%; /* 1 */
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
-    word-wrap: normal !important; /* 2 */  
+    word-wrap: normal !important; /* 2 */
 }
 
 }
@@ -132,8 +151,8 @@ slide-figure-sk {
 }
 
 /*.sk-text {*/
-    /*position:relative;*/
-    /*top:4px;*/
+/*position:relative;*/
+/*top:4px;*/
 /*}*/
 
 
@@ -149,9 +168,9 @@ slide-figure-sk {
 
 .spotify {
     position: absolute;
-    top: 24px;
-    left: 1302px;
-    height: 48px;
+    top: 12px;
+    left: 1304px;
+    height: 42px;
     width: 458px;
     white-space: nowrap;
     max-width: 100%; /* 1 */
@@ -165,9 +184,9 @@ slide-figure-sk {
 /* LIVE FOR */
 .live-for {
     position: absolute;
-    top: 26px;
-    left: 1777px;
-    height: 36px;
+    top: 12px;
+    left: 1852px;
+    height: 42px;
     width: 130px;
 }
 
@@ -228,16 +247,18 @@ slide-figure-sk {
 /* BOTTOM INFO BOXES */
 .donation {
     position: absolute;
-    top: 984px;
+    top: 990px;
     left: 588px;
     height: 24px;
     width: 288px;
 }
 
 .span-bottom-text {
+    font-size:20px;
+    color: #1F2227;
     position: absolute;
     top: 4px;
-    left: 0px;
+    left: 12px;
 }
 
 .donation-value-div{
@@ -245,12 +266,14 @@ slide-figure-sk {
     top: 1020px;
     left: 588px;
     height: 48px;
-    width: 288px;    
+    width: 288px;
 
 }
 
 .bottom-left-value{
-    font-size: 24px;
+    font-family: 'Agency FB Bold','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:24px;
+    color: #1F2227;
     position: absolute;
     left:12px;
     top:-18px;
@@ -258,11 +281,12 @@ slide-figure-sk {
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
-    
+
 }
 
 .bottom-right-value{
     font-size: 24px;
+    color: #1F2227;
     position: absolute;
     right:12px;
     top:-18px;
@@ -272,7 +296,7 @@ slide-figure-sk {
 
 .top-donation {
     position: absolute;
-    top: 984px;
+    top: 990px;
     left: 888px;
     height: 24px;
     width: 288px;
@@ -284,13 +308,13 @@ slide-figure-sk {
     left: 888px;
     height: 48px;
     width: 288px;
-    text-shadow:0px 0px 0px !important;    
+    text-shadow:0px 0px 0px !important;
 
 }
 
 .subscriber {
     position: absolute;
-    top: 984px;
+    top: 990px;
     left: 1188px;
     height: 24px;
     width: 288px;
@@ -302,13 +326,13 @@ slide-figure-sk {
     left: 1188px;
     height: 48px;
     width: 288px;
-    text-shadow:0px 0px 0px !important;    
+    text-shadow:0px 0px 0px !important;
 
 }
 
 .buyins {
     position: absolute;
-    top: 984px;
+    top: 990px;
     left: 1488px;
     height: 24px;
     width: 132px;
@@ -326,13 +350,13 @@ slide-figure-sk {
     left: 1488px;
     height: 48px;
     width: 132px;
-    text-shadow:0px 0px 0px !important;    
+    text-shadow:0px 0px 0px !important;
 
 }
 
 .cashes {
     position: absolute;
-    top: 984px;
+    top: 990px;
     left: 1632px;
     height: 24px;
     width: 132px;
@@ -344,16 +368,16 @@ slide-figure-sk {
     left: 1632px;
     height: 48px;
     width: 132px;
-    text-shadow:0px 0px 0px !important;    
+    text-shadow:0px 0px 0px !important;
 
 }
 .profit {
     position: absolute;
-    top: 984px;
+    top: 990px;
     left: 1776px;
     height: 24px;
     width: 132px;
-    
+
 }
 
 .profit-value-div{
@@ -362,7 +386,7 @@ slide-figure-sk {
     left: 1776px;
     height: 48px;
     width: 132px;
-    text-shadow:0px 0px 0px !important;    
+    text-shadow:0px 0px 0px !important;
 
 }
 
