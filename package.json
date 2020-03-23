@@ -1,25 +1,28 @@
 {
   "name": "stream-addon-app",
   "version": "1.0.0",
-  "description": "Client Side Application used for Twitch Streams",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "angular": "^1.7.9",
-    "gulp": "^3.9.1",
-    "gulp-connect": "^2.3.1",
-    "jquery": "^2.2.4",
-    "font-awesome": "^4.7.0"
-  },
-  "devDependencies": {},
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "start" : "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^2.3.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/JohannJivaro/stream-addon-app.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/JohannJivaro/stream-addon-app/issues"
   },
