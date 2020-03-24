@@ -13,6 +13,24 @@ body {
     /*overflow: hidden;*/
 }
 
+@font-face {
+    font-family: 'Agency FB';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Agency FB'), local('AgencyFB-Regular'),
+    url(../fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.woff) format('woff'),
+    url(../fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Agency FB Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Agency FB Bold'), local('AgencyFB-Bold'),
+    url(../fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.woff) format('woff'),
+    url(../fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.ttf) format('truetype');
+}
+
 div {
     border: 0px solid red;
 }
@@ -21,7 +39,7 @@ div {
     width: 1920px;
     height: 1080px;
     display: block;
-    background: url("../img/overlay.png") no-repeat;
+    background: url("../img/overlay.svg") no-repeat;
 }
 
 /* HEADER */
@@ -101,6 +119,7 @@ div {
 
 /* ACTIVE TOURNAMENTS */
 .active-tournaments {
+    font-family: 'Agency FB Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: absolute;
     top: 435px;
     left: 14px;

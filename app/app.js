@@ -11,23 +11,17 @@
 	/**
 	 * app module
 	 */
-	angular
-		.module('app', [])
-		.config(Config);
+	angular.module('app', []).config(Config);
 
 	// Config
 	// --------------------------------------------------
 	/* @ngInject */
-	function Config() {
-
-	}
+	function Config() {}
 
 	/**
 	 * Tourney Controller
 	 */
-	angular
-		.module('app')
-		.controller('AppCtrl', AppCtrl);
+	angular.module('app').controller('AppCtrl', AppCtrl);
 
 	/* @ngInject */
 	function AppCtrl($http, $interval) {
@@ -36,9 +30,14 @@
 
 		// Public ViewModel
 		// --------------------------------------------------
-		vm.data = [];
+		vm.data = {
+			chronoUp: 0,
+			buyIns: 0,
+			cashes: 0,
+			bankroll: 0,
+		};
 
-		
+		var apiPath = 'http://localhost:3000';
 
 		// Run
 		// --------------------------------------------------
@@ -47,35 +46,69 @@
 		// Private functions
 		// --------------------------------------------------
 		function activate() {
-			getData();
+			getChronoUp();
+			getBuyIns();
+			getCashes();
+			getBankroll();
 
 			setDataWatcher();
 		}
 
+		function getChronoUp() {
+			// TODO: Get Data
+			return vm.data.chronoUp;
+		}
 
-		function getData() {
-			$http.get('output.json')
-				.then(function successCallback(response) {
-					vm.data = response.data;
-				}, function errorCallback(response) {
+		function getBuyIns() {
+			$http.get(`${apiPath}/buy-ins`).then(
+				function successCallback(response) {
+					vm.data.buyIns = response.data;
+				},
+				function errorCallback(response) {
 					console.log('error', response);
-				});
+				},
+			);
+		}
+
+		function getCashes() {
+			$http.get(`${apiPath}/cashes`).then(
+				function successCallback(response) {
+					vm.data.cashes = response.data;
+				},
+				function errorCallback(response) {
+					console.log('error', response);
+				},
+			);
+		}
+
+		function getBankroll() {
+			$http.get(`${apiPath}/bankroll`).then(
+				function successCallback(response) {
+					vm.data.bankroll = response.data;
+				},
+				function errorCallback(response) {
+					console.log('error', response);
+				},
+			);
 		}
 
 		function setDataWatcher() {
-			$interval(function() {
-				getData();
-			}, 1000)
+			$interval(function () {
+				getChronoUp();
+			}, 1000);
+
+			$interval(function () {
+				getBuyIns();
+				getCashes();
+				getBankroll();
+			}, 30000);
 		}
 	}
 
-
-/**
+	/**
 	 * Tourney Controller
 	 */
-	angular
-		.module('app')
-		.controller('TourneyCtrl', TourneyCtrl);
+	angular.module('app').controller('TourneyCtrl', TourneyCtrl);
 
 	/* @ngInject */
 	function TourneyCtrl($http, $interval) {
@@ -100,11 +133,11 @@
 		}
 
 		function setData(data) {
-			data.forEach(tourn => {
-				if(tourn.entrants === 'acr') {
-					if(!vm.memory[tourn.tourneyid]) {
+			data.forEach((tourn) => {
+				if (tourn.entrants === 'acr') {
+					if (!vm.memory[tourn.tourneyid]) {
 						vm.memory[tourn.tourneyid] = tourn.entrantsRemaining;
-					} else if(vm.memory[tourn.tourneyid] < tourn.entrantsRemaining) {
+					} else if (vm.memory[tourn.tourneyid] < tourn.entrantsRemaining) {
 						// this happens when playing rebuy/latereg
 						vm.memory[tourn.tourneyid] = tourn.entrantsRemaining;
 					}
@@ -115,20 +148,20 @@
 		}
 
 		function updateHtml() {
-			$http.get('tournaments.json')
-				.then(function successCallback(response) {
+			$http.get('tournaments.json').then(
+				function successCallback(response) {
 					setData(response.data);
-				}, function errorCallback(response) {
+				},
+				function errorCallback(response) {
 					console.log('error', response);
-				});
+				},
+			);
 		}
 
 		function setDataWatcher() {
-			$interval(function() {
+			$interval(function () {
 				updateHtml();
-			}, 5000)
+			}, 5000);
 		}
 	}
-
-
 })();
