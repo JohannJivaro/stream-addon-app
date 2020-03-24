@@ -119,6 +119,7 @@ div {
 
 /* ACTIVE TOURNAMENTS */
 .active-tournaments {
+    font-family: 'Agency FB Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: absolute;
     top: 435px;
     left: 14px;
