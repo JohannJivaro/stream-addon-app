@@ -35,6 +35,13 @@
 			buyIns: 0,
 			cashes: 0,
 			bankroll: 0,
+			latestDonation: "",
+			topDonation: "",
+			latestSubscriber: "",
+			artist: "",
+			songname: "",
+
+
 		};
 
 		var apiPath = 'http://localhost:3000';
@@ -50,14 +57,26 @@
 			getBuyIns();
 			getCashes();
 			getBankroll();
+			getLatestDonation();
+			getTopDonation();
+			getLatestSubscriber();
+			getArtist();
+			getSongname();
+
 
 			setDataWatcher();
 		}
 
 		function getChronoUp() {
-			// TODO: Get Data
-			return vm.data.chronoUp;
-		}
+            $http.get(`${apiPath}/chrono-up`).then(
+                function successCallback(response) {
+                    vm.data.chronoUp = response.data;
+                },
+                function errorCallback(response) {
+                    console.log('error', response);
+                },
+            );
+        }
 
 		function getBuyIns() {
 			$http.get(`${apiPath}/buy-ins`).then(
@@ -92,15 +111,76 @@
 			);
 		}
 
-		function setDataWatcher() {
+        function getLatestDonation() {
+            $http.get(`${apiPath}/latest-donation`).then(
+                function successCallback(response) {
+                    vm.data.latestDonation = response.data;
+                },
+                function errorCallback(response) {
+                    console.log('error', response);
+                },
+            );
+        }
+
+        function getTopDonation() {
+            $http.get(`${apiPath}/top-donation`).then(
+                function successCallback(response) {
+                    vm.data.topDonation = response.data;
+                },
+                function errorCallback(response) {
+                    console.log('error', response);
+                },
+            );
+        }
+
+        function getLatestSubscriber() {
+            $http.get(`${apiPath}/latest-subscriber`).then(
+                function successCallback(response) {
+                    vm.data.latestSubscriber = response.data;
+                },
+                function errorCallback(response) {
+                    console.log('error', response);
+                },
+            );
+        }
+
+        function getArtist() {
+            $http.get(`${apiPath}/artist`).then(
+                function successCallback(response) {
+                    vm.data.artist = response.data;
+                },
+                function errorCallback(response) {
+                    console.log('error', response);
+                },
+            );
+        }
+
+        function getSongname() {
+            $http.get(`${apiPath}/songname`).then(
+                function successCallback(response) {
+                    vm.data.songname = response.data;
+                },
+                function errorCallback(response) {
+                    console.log('error', response);
+                },
+            );
+        }
+
+
+
+      	function setDataWatcher() {
 			$interval(function () {
 				getChronoUp();
+				getArtist();
+				getSongname();
 			}, 1000);
 
 			$interval(function () {
 				getBuyIns();
 				getCashes();
 				getBankroll();
+				getLatestDonation();
+				getTopDonation();
 			}, 30000);
 		}
 	}

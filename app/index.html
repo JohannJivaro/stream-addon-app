@@ -83,8 +83,8 @@
 
     <!-- Music -->
     <div class="spotify">
-        <p class="artist">{{ vm.data['Snip_Artist.txt'] }}</p>
-        <p class="songname">{{ vm.data['Snip_Track.txt'] }}</p>
+        <p class="artist">{{ vm.data.artist }}</p>
+        <p class="songname">{{ vm.data.songname }}</p>
     </div>
 
     <!-- Sub Countdown
@@ -123,7 +123,7 @@
     </div>
 
     <div class="donation-value-div">
-        <p class="bottom-left-value">{{ vm.data['most_recent_donator.txt'] }}</p>
+        <p class="bottom-left-value">{{ vm.data.latestDonation }}</p>
     </div>
 
     <!-- Top Donations -->
@@ -132,7 +132,7 @@
     </div>
 
     <div class="top-donation-value-div">
-        <p class="bottom-left-value">{{ vm.data['30day_top_donator.txt'] }}</p>
+        <p class="bottom-left-value">{{ vm.data.topDonation }}</p>
     </div>
 
     <!-- Subscribers -->
@@ -141,7 +141,7 @@
     </div>
 
     <div class="subscriber-value-div">
-        <p class="bottom-left-value">{{ vm.data['most_recent_subscriber.txt'] }}</p>
+        <p class="bottom-left-value">{{ vm.data.latestSubscriber }}</p>
     </div>
 
     <!-- Buyins -->
