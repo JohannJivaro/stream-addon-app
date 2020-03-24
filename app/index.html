@@ -78,7 +78,7 @@
 
     <div class="live-for">
         <p class="artist">Live For</p>
-        <p class="songname">{{ vm.data['ChronoUp.txt'] }}</p>
+        <p class="songname">{{ vm.data.chronoUp }}</p>
     </div>
 
     <!-- Music -->
@@ -150,7 +150,7 @@
     </div>
 
     <div class="buyins-value-div">
-        <p class="bottom-left-value">${{ vm.data['Buy-Ins.txt'] | number }}</p>
+        <p class="bottom-left-value">${{ vm.data.buyIns | number }}</p>
     </div>
 
     <!-- Cashes -->
@@ -159,7 +159,7 @@
     </div>
 
     <div class="cashes-value-div">
-        <p class="bottom-left-value">${{ vm.data['Cashes.txt'] | number }}</p>
+        <p class="bottom-left-value">${{ vm.data.cashes | number }}</p>
     </div>
 
     <!-- Profit -->
@@ -168,7 +168,7 @@
     </div>
 
     <div class="profit-value-div">
-        <p class="bottom-left-value">${{ vm.data['Bankroll.txt'] | number }}</p>
+        <p class="bottom-left-value">${{ vm.data.bankroll | number }}</p>
     </div>
 
     <!-- Scripts -->
