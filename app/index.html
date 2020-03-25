@@ -6,8 +6,7 @@
     <link href="css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="css/tourney-info.css">
     <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link crossorigin="anonymous" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-          rel='stylesheet' type='text/css'>
+    <link crossorigin="anonymous" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
 </head>
 <body ng-app="app" ng-controller="AppCtrl as vm">
@@ -95,29 +94,29 @@
 
     <!-- Active Tournaments -->
 
-    <div class="active-tournaments">
-       <span>Active Tournaments</span>
-   </div>
+    <!--<div class="active-tournaments">
+      <span>Active Tournaments</span>
+  </div>-->
 
-    <!--<div class="position">
-       <span>Position</span>
-   </div>
+   <!--<div class="position">
+      <span>Position</span>
+  </div>
 
-   <div class="Table" ng-controller="TourneyCtrl as vm">
+  <div class="Table" ng-controller="TourneyCtrl as vm">
 
-       <div class="Row" ng-repeat="tourney in vm.data | limitTo:6 | orderBy:'-inTheMoney'">
-           <div class="tournament" ng-class="{'is-itm': tourney.inTheMoney}">
-               <p class="u-textTruncate"><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
-           </div>
-           <div class="position-tourney-info" ng-class="{'is-itm': tourney.inTheMoney}">
-               <p>{{ tourney.playerPosition }} of {{ tourney.entrantsRemaining }}</p>
-           </div>
-       </div>
-       <p class="powered-by">Powered by <img src="img/logo.svg" class="jivaro-logo"></p>
+      <div class="Row" ng-repeat="tourney in vm.data | limitTo:6 | orderBy:'-inTheMoney'">
+          <div class="tournament" ng-class="{'is-itm': tourney.inTheMoney}">
+              <p class="u-textTruncate"><i class="fa fa-money" ng-if="tourney.inTheMoney"></i> {{ tourney.name }}</p>
+          </div>
+          <div class="position-tourney-info" ng-class="{'is-itm': tourney.inTheMoney}">
+              <p>{{ tourney.playerPosition }} of {{ tourney.entrantsRemaining }}</p>
+          </div>
+      </div>
+      <p class="powered-by">Powered by <img src="img/logo.svg" class="jivaro-logo"></p>
 
-   </div>
+  </div>
 
-   <!-- Donations -->
+  <!-- Donations -->
     <div class="donation">
         <span class="span-bottom-text">Latest Donation</span>
     </div>
@@ -174,7 +173,7 @@
     <!-- Scripts -->
     <script src="jquery/dist/jquery.min.js"></script>
     <script src="angular/angular.min.js"></script>
-    <script src="font-awesome/css/font-awesome.css"></script>
+
     <script src="app.js"></script>
     <!--<script src="js/app.js" type="text/javascript"></script> -->
     <script src="js/timer.js" type="text/javascript"></script>
