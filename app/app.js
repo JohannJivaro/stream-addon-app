@@ -31,15 +31,15 @@
 		// Public ViewModel
 		// --------------------------------------------------
 		vm.data = {
-			chronoUp: 0,
+			chronoUp: "10:10:10",
 			buyIns: 0,
 			cashes: 0,
 			bankroll: 0,
-			latestDonation: "",
-			topDonation: "",
-			latestSubscriber: "",
-			artist: "",
-			songname: "",
+			latestDonation: "No Update",
+			topDonation: "No Update",
+			latestSubscriber: "No Update",
+			artist: "IIIIIot Playing",
+			songname: "Not Playing",
 
 
 		};

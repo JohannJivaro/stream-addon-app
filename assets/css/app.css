@@ -1,14 +1,20 @@
 html, html a {
     -webkit-font-smoothing: antialiased !important;
-    /*text-shadow: 2px 2px 1px #000;*/
+
 }
 
 body {
+    --main-bg-color:#2B2A2E;
+    --light-font-color:#DAD8EB;
+    --dark-font-color:#2B2A2E;
+    --main-border-color:#DAD8EB;
+    --main-font:'Teko', sans-serif;
+
     background-color: transparent;
     margin: 0;
-    font-family: 'Agency FB','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 22px;
-    color: #DAD8EA;
+    font-family: var(--main-font);
+    color: var(--main-bg-color);
+    font-size: 24px;
     /* text-shadow: 2px 2px 1px #000; /*
     /*overflow: hidden;*/
 }
@@ -30,7 +36,7 @@ body {
     url(../fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.woff) format('woff'),
     url(../fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.ttf) format('truetype');
 }
-
+/* TESTING */
 div {
     border: 0px solid red;
 }
@@ -42,159 +48,20 @@ div {
     background: url("../img/overlay.svg") no-repeat;
 }
 
-/* HEADER */
+/* SOCIAL MEDIA */
 
 .social-media{
     position: absolute;
-    top: 17px;
+    top: 14px;
     left: 156px;
+    color: var(--light-font-color);
 }
 
-
-.twitter{
-    position: absolute;
-    top: 17px;
-    left: 60px;
-}
-
-.snapchat{
-    position: absolute;
-    top: 17px;
-    left: 499px;
-}
-
-.instagram{
-    position: absolute;
-    top: 17px;
-    left: 280px;
-}
-
-
-.artist{
-    position: absolute;
-    top:-20px;
-    left:0px;
-    font-size: 18px;
-}
-
-.songname{
-    position: absolute;
-    top:-4px;
-    left:0px;
-    font-family: 'Agency FB Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    /*font-weight: 300;*/
-    font-size: 20px;
-    line-height: 23px;
-    white-space: nowrap;
-    max-width: 100%; /* 1 */
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    word-wrap: normal !important; /* 2 */
-}
-
-}
-.test {
-    position: fixed;
-    top: 84px;
-    left: 597px;
-    width: 400px;
-    height: 400px;
-}
-
-.fa-glow {
-    text-shadow: 0 0 5px rgba(255,255,255,0.7);
-}
-
-/* SUB COUNTDOWN */
-
-.sub-countdown
-{
-    position: absolute;
-    top: 72px;
-    left: 12px;
-    width: 564px;
-    height: 36px;
-}
-
-.text-span-sub-countdown
-{
-    position: relative;
-    top: 4px;
-    left: 6px;
-}
-
-/* ACTIVE TOURNAMENTS */
-.active-tournaments {
-    font-family: 'Agency FB Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    position: absolute;
-    top: 435px;
-    left: 14px;
-}
-
-.position {
-    position: absolute;
-    top: 435px;
-    left: 509px;
-}
-
-/*SLIDESHOW*/
-
-#slideshow {
-    position: absolute;
-    top: 24px;
-    left: 14px;
-    width: auto;
-    height: 36px;
-
-}
-
-#slideshow > div {
-    position: absolute;
-    width:auto;
-}
-
-.slide {
-    display: flex;
-    align-items: center;
-}
-
-.slide-figure {
-    display: flex;
-    align-items: center;
-    border:0px solid green;
-    width: 60px;
-}
-
-slide-figure-sk {
-    display: block;
-    align-items: center;
-    border:0px solid green;
-    width: 60px;
-}
-.slide-text {
-    border:0px solid blue;
-}
-
-/*.sk-text {*/
-/*position:relative;*/
-/*top:4px;*/
-/*}*/
-
-
-/* SOUNDBAR */
-
-.eq {
-    position: absolute;
-    top: 24px;
-    left: 1257px;
-    height: 36px;
-    width: 54px;
-}
+/* SPOTIFY */
 
 .spotify {
     position: absolute;
-    top: 12px;
+    top: 14px;
     left: 1567px;
     height: 42px;
     width: 222px;
@@ -207,86 +74,91 @@ slide-figure-sk {
     padding-right:0px;
 }
 
+.artist{
+    position: absolute;
+    top: -27px;
+    left:0px;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--light-font-color);
+}
 
-/* LIVE FOR */
+.songname{
+    position: absolute;
+    top:-7px;
+    left:0px;
+    color: var(--light-font-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    white-space: nowrap;
+    max-width: 100%; /* 1 */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
+}
+
+/* ChronoUP */
+
 .live-for {
     position: absolute;
-    top: 17px;
+    top: 14px;
     left: 1846px;
-    text-align:right;
-    width:61px;
-
-}
-
-.text-span-live-for{
+    text-align: right;
+    width: 61px;
     color:#FF0000;
+
 }
 
-.on-air{
-    font-family: 'Agency FB Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color:#FF0000;
-    letter-spacing:12px;
+/*-----------------------BOTTOM DIV FONT AND COLOR SETTINGS-----------------------*/
+
+/*GLOBAL BOTTOM TEXT LEFT*/
+
+.span-bottom-text-left {
+    font-size:26px;
+    font-weight:300;
     position: absolute;
-    top:-20px;
-    left:0px;
-    font-size: 18px;
+    top: 3px;
+    left: 12px;
 }
 
-.timer-right {
-    position: relative;
-    left: 58px;
-    top: 4px;
-    border: 0;
-}
-
-.fa-span-hourglass-half {
-    font-size: 47px;
-    position: relative;
-    left: -1px;
-    top: -16px;
-}
-
-.bar {
-    border: 0 !important;
-    background-color: #fff;
-    width: 6px;
-    height: 36px;
-    display: inline-block;
-    vertical-align: bottom;
+.bottom-value-left{
+    font-size:30px;
+    font-weight:500;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-box-shadow: 0 0 5px rgba(255,255,255,0.7);
-    -moz-box-shadow: 0 0 5px rgba(255,255,255,0.7);
-    box-shadow: 0 0 5px rgba(255,255,255,0.7);
+    left:12px;
+    top:-26px;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+
 }
 
-.bar-2 {
-    border: 0 !important;
-    left: 9px;
+/*GLOBAL BOTTOM TEXT RIGHT*/
+
+.span-bottom-text-right {
+    font-size:26px;
+    font-weight:300;
+    position: absolute;
+    top: 3px;
+    right: 12px;
+
 }
 
-.bar-3 {
-    border: 0 !important;
-    left: 18px;
+.bottom-value-right{
+    font-size:30px;
+    font-weight:500;
+    position: absolute;
+    right:12px;
+    top:-22px;
+
 }
 
-.bar-4 {
-    border: 0;
-    left: 27px;
-}
+/*-----------------------BOTTOM DIV POSITON SETTINGS-----------------------*/
 
-.bar-5 {
-    border: 0;
-    left: 36px;
-}
+/* LATEST DONATIONS */
 
-.bar-6 {
-    border: 0;
-    left: 45px;
-}
-
-/* BOTTOM INFO BOXES */
 .donation {
     position: absolute;
     top: 990px;
@@ -295,46 +167,15 @@ slide-figure-sk {
     width: 288px;
 }
 
-.span-bottom-text {
-    font-size:20px;
-    color: #2B2A2E;
-    position: absolute;
-    top: 4px;
-    left: 12px;
-}
-
 .donation-value-div{
     position: absolute;
     top: 1020px;
     left: 588px;
     height: 48px;
     width: 288px;
-
 }
 
-.bottom-left-value{
-    font-family: 'Agency FB Bold','Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size:24px;
-    color: #2B2A2E;
-    position: absolute;
-    left:12px;
-    top:-18px;
-    text-shadow:0px 0px 0px !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-
-}
-
-.bottom-right-value{
-    font-size: 24px;
-    color: #2B2A2E;
-    position: absolute;
-    right:12px;
-    top:-18px;
-    text-shadow:0px 0px 0px !important;
-}
-
+/*TOP DONATION*/
 
 .top-donation {
     position: absolute;
@@ -350,9 +191,9 @@ slide-figure-sk {
     left: 888px;
     height: 48px;
     width: 288px;
-    text-shadow:0px 0px 0px !important;
-
 }
+
+/* LATEST SUBSCRIBER*/
 
 .subscriber {
     position: absolute;
@@ -368,9 +209,9 @@ slide-figure-sk {
     left: 1188px;
     height: 48px;
     width: 288px;
-    text-shadow:0px 0px 0px !important;
-
 }
+
+/* BUY-INS */
 
 .buyins {
     position: absolute;
@@ -380,22 +221,15 @@ slide-figure-sk {
     width: 132px;
 }
 
-.span-bottom-text-right {
-    position: absolute;
-    top: 3px;
-    right: 12px;
-    color: #2B2A2E;
-}
-
 .buyins-value-div{
     position: absolute;
     top: 1020px;
     left: 1488px;
     height: 48px;
     width: 132px;
-    text-shadow:0px 0px 0px !important;
-
 }
+
+/* CASHES */
 
 .cashes {
     position: absolute;
@@ -411,16 +245,16 @@ slide-figure-sk {
     left: 1632px;
     height: 48px;
     width: 132px;
-    text-shadow:0px 0px 0px !important;
-
 }
+
+/* PROFIT */
+
 .profit {
     position: absolute;
     top: 990px;
     left: 1776px;
     height: 24px;
     width: 132px;
-
 }
 
 .profit-value-div{
@@ -429,95 +263,5 @@ slide-figure-sk {
     left: 1776px;
     height: 48px;
     width: 132px;
-    text-shadow:0px 0px 0px !important;
-
 }
 
-
-/*
-.header{
-  position:fixed;
-  top:0px;
-  left:0px;
-  width:1920px;
-  height:12px;
-  background:#262626;
-  box-shadow: 2px 2px 1px rgba(0,0,0,0.8)
-
-}
-
-.triangle1{
-position:fixed;
-top:12px;
-left:666px;
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 51px 70px 0 70px;
-border-color: #262626 transparent transparent transparent;
-
-}
-
-.triangle2{
-position:fixed;
-top:12px;
-left:1105px;
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 51px 70px 0 70px;
-border-color: #262626 transparent transparent transparent;
-
-}
-
-.logo-header{
-position:fixed;
-top:12px;
-left:736px;
-width: 438px;
-height: 51px;
-background: #262626;
-
-
-}
-
-.table{
-position: fixed;
-top: 72px;
-left: 585px;
-width: 1320px;
-height: 910px;
-box-shadow:0px 0px 0px 3px #262626 inset, 1px 1px 1px 1px rgba(0,0,0,0.6);
-
-}
-
-.chat{
-position: fixed;
-top: 744px;
-left: 12px;
-width: 564px;
-height: 324px;
-box-shadow:0px 0px 0px 3px #262626 inset, 1px 1px 1px 1px rgba(0,0,0,0.6);
-
-}
-
-.tourney-info{
-position: fixed;
-top: 467px;
-left: 12px;
-width: 564px;
-height: 264px;
-box-shadow:0px 0px 0px 3px #262626 inset, 1px 1px 1px 1px rgba(0,0,0,0.6);
-}
-
-.webcam{
-position: fixed;
-top: 72px;
-left: 12px;
-width: 564px;
-height: 324px;
-box-shadow: inset 3px 3px 0px 0px rgba(38,38,38,1), inset -3px 0px 0px 0px rgba(38,38,38,1), 1px 1px 1px 1px rgba(0,0,0,0.6);
-
-
-}
-*/
