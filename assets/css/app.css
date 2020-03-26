@@ -44,6 +44,13 @@ div {
 
 /* HEADER */
 
+.social-media{
+    position: absolute;
+    top: 17px;
+    left: 156px;
+}
+
+
 .twitter{
     position: absolute;
     top: 17px;
@@ -188,25 +195,27 @@ slide-figure-sk {
 .spotify {
     position: absolute;
     top: 12px;
-    left: 1304px;
+    left: 1567px;
     height: 42px;
-    width: 458px;
+    width: 222px;
     white-space: nowrap;
     max-width: 100%; /* 1 */
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
     word-wrap: normal !important; /* 2 */
+    padding-right:0px;
 }
 
 
 /* LIVE FOR */
 .live-for {
     position: absolute;
-    top: 12px;
+    top: 17px;
     left: 1846px;
-    height: 42px;
-    width: 130px;
+    text-align:right;
+    width:61px;
+
 }
 
 
@@ -370,8 +379,9 @@ slide-figure-sk {
 
 .span-bottom-text-right {
     position: absolute;
-    top: 4px;
-    right: 3px;
+    top: 3px;
+    right: 12px;
+    color: #2B2A2E;
 }
 
 .buyins-value-div{

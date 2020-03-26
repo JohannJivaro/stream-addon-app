@@ -17,16 +17,19 @@
 <div class="container">
 
     <!--Main Social Media-->
-    <div class="twitter">
+    <div class="social-media">
+        <span class="text-span-social-media">@djaniel88</span>
+    </div>
+    <!-- <div class="twitter">
         <span class="text-span-twitter">@djaniel88</span>
     </div>
     <div class="instagram">
-        <span class="text-span-instagram">@danielmar88</span>
+        <span class="text-span-instagram">@djaniel88</span>
     </div>
     <div class="snapchat">
         <span class="text-span-snapchat">@djaniel88</span>
     </div>
-
+    -->
     <!--Social Slideshow-->
     <!--
         <div id="slideshow" class="twitter">
@@ -76,14 +79,14 @@
         <!-- Live For Timer -->
 
     <div class="live-for">
-        <p class="on-air">LIVE</p>
-        <p class="songname">04:07:03</p>
+        <span class="text-span-live-for">{{ vm.data.chronoUp }}</span>
     </div>
 
     <!-- Music -->
     <div class="spotify">
         <p class="artist">{{ vm.data.artist }}</p>
         <p class="songname">{{ vm.data.songname }}</p>
+
     </div>
 
     <!-- Sub Countdown
@@ -145,29 +148,29 @@
 
     <!-- Buyins -->
     <div class="buyins">
-        <span class="span-bottom-text">Todays Buy-ins</span>
+        <span class="span-bottom-text-right">Todays Buy-ins</span>
     </div>
 
     <div class="buyins-value-div">
-        <p class="bottom-left-value">${{ vm.data.buyIns | number }}</p>
+        <p class="bottom-right-value">${{ vm.data.buyIns | number }}</p>
     </div>
 
     <!-- Cashes -->
     <div class="cashes">
-        <span class="span-bottom-text">Todays Cashes</span>
+        <span class="span-bottom-text-right">Todays Cashes</span>
     </div>
 
     <div class="cashes-value-div">
-        <p class="bottom-left-value">${{ vm.data.cashes | number }}</p>
+        <p class="bottom-right-value">${{ vm.data.cashes | number }}</p>
     </div>
 
     <!-- Profit -->
     <div class="profit">
-        <span class="span-bottom-text">Bankroll</span>
+        <span class="span-bottom-text-right">Bankroll</span>
     </div>
 
     <div class="profit-value-div">
-        <p class="bottom-left-value">${{ vm.data.bankroll | number }}</p>
+        <p class="bottom-right-value">${{ vm.data.bankroll | number }}</p>
     </div>
 
     <!-- Scripts -->
