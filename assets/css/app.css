@@ -107,7 +107,8 @@ div {
     left: 1846px;
     text-align: right;
     width: 61px;
-    color:#FF0000;
+    color:var(--light-font-color);
+
 
 }
 
