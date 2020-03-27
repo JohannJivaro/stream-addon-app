@@ -31,7 +31,7 @@
 		// Public ViewModel
 		// --------------------------------------------------
 		vm.data = {
-			chronoUp: "10:10:10",
+			chronoUp: "44:44:44",
 			buyIns: 0,
 			cashes: 0,
 			bankroll: 0,
