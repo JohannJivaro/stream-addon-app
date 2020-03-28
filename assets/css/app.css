@@ -1,51 +1,19 @@
-html, html a {
-    -webkit-font-smoothing: antialiased !important;
+@import url("global.css");
 
-}
-
-body {
-    --main-bg-color:#2B2A2E;
-    --light-font-color:#DAD8EB;
-    --dark-font-color:#2B2A2E;
-    --main-border-color:#DAD8EB;
-    --main-font:'Teko', sans-serif;
-
-    background-color: transparent;
-    margin: 0;
-    font-family: var(--main-font);
-    color: var(--main-bg-color);
-    font-size: 24px;
-    /* text-shadow: 2px 2px 1px #000; /*
-    /*overflow: hidden;*/
-}
-
-@font-face {
-    font-family: 'Agency FB';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Agency FB'), local('AgencyFB-Regular'),
-    url(../fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.woff) format('woff'),
-    url(../fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Agency FB Bold';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Agency FB Bold'), local('AgencyFB-Bold'),
-    url(../fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.woff) format('woff'),
-    url(../fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.ttf) format('truetype');
-}
-/* TESTING */
-div {
-    border: 0px solid red;
-}
+/* CONTAINERS */
 
 .container {
     width: 1920px;
     height: 1080px;
     display: block;
     background: url("../img/overlay.svg") no-repeat;
+}
+
+.container-partypoker {
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    background: url("../img/overlay-partypoker.svg") no-repeat;
 }
 
 /* SOCIAL MEDIA */
@@ -105,7 +73,7 @@ div {
     position: absolute;
     top: 14px;
     left: 1846px;
-    text-align: right;
+    text-align: left;
     width: 61px;
     color:var(--light-font-color);
 
@@ -113,6 +81,37 @@ div {
 }
 
 /*-----------------------BOTTOM DIV FONT AND COLOR SETTINGS-----------------------*/
+
+.bottom-div-left {
+    z-index:0;
+    background-color:var(--main-border-color);
+    position: absolute;
+    left:588px;
+    top:984px;
+    width: 888px;
+    height: 84px;
+
+}
+
+.bottom-div-right {
+    background-color:var(--main-border-color);
+    position: absolute;
+    left:1488px;
+    top:984px;
+    width: 420px;
+    height: 84px;
+}
+
+.bottom-div-partypoker-left {
+    z-index:0;
+    background-color:var(--main-border-color);
+    position: absolute;
+    left:634px;
+    top:984px;
+    width: 842px;
+    height: 84px;
+
+}
 
 /*GLOBAL BOTTOM TEXT LEFT*/
 
@@ -168,12 +167,29 @@ div {
     width: 288px;
 }
 
-.donation-value-div{
+.donation-value-div
+{
     position: absolute;
     top: 1020px;
     left: 588px;
     height: 48px;
     width: 288px;
+}
+
+.donation-partypoker {
+    position: absolute;
+    top: 990px;
+    left: 634px;
+    height: 24px;
+    width: 272px;
+}
+
+.donation-value-div-partypoker{
+    position: absolute;
+    top: 1020px;
+    left: 634px;
+    height: 48px;
+    width: 272px;
 }
 
 /*TOP DONATION*/
@@ -194,6 +210,22 @@ div {
     width: 288px;
 }
 
+.top-donation-partypoker {
+    position: absolute;
+    top: 990px;
+    left: 906px;
+    height: 24px;
+    width: 272px;
+}
+
+.top-donation-value-div-partypoker{
+    position: absolute;
+    top: 1020px;
+    left: 906px;
+    height: 48px;
+    width: 272px;
+}
+
 /* LATEST SUBSCRIBER*/
 
 .subscriber {
@@ -210,6 +242,22 @@ div {
     left: 1188px;
     height: 48px;
     width: 288px;
+}
+
+.subscriber-partypoker {
+    position: absolute;
+    top: 990px;
+    left: 1178px;
+    height: 24px;
+    width: 272px;
+}
+
+.subscriber-value-div-partypoker{
+    position: absolute;
+    top: 1020px;
+    left: 1178px;
+    height: 48px;
+    width: 272px;
 }
 
 /* BUY-INS */

@@ -1,0 +1,25 @@
+html, html a {
+	-webkit-font-smoothing: antialiased !important;
+
+}
+
+body {
+	--main-bg-color:#2B2A2E;
+	--light-font-color:#DAD8EB;
+	--dark-font-color:#2B2A2E;
+	--main-border-color:#DAD8EB;
+	--main-font:'Teko', sans-serif;
+
+	background-color: transparent;
+	margin: 0;
+	font-family: var(--main-font);
+	color: var(--main-bg-color);
+	font-size: 24px;
+	/* text-shadow: 2px 2px 1px #000; /*
+    /*overflow: hidden;*/
+}
+
+/* TESTING */
+div {
+	border: 1px solid red;
+}
