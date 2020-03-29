@@ -44,7 +44,7 @@
 
 .artist{
     position: absolute;
-    top: -27px;
+    top: -25px;
     left:0px;
     font-size: 20px;
     font-weight: 300;
@@ -87,7 +87,7 @@
     background-color:var(--main-div-color);
     position: absolute;
     left:588px;
-    top:1014px;
+    top:1004px;
     width: 888px;
     height: 54px;
 
@@ -98,7 +98,7 @@
     background-color:var(--main-div-color);
     position: absolute;
     left:1488px;
-    top:1014px;
+    top:1004px;
     width: 420px;
     height: 54px;
 }
