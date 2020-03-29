@@ -57,7 +57,7 @@
     left:0px;
     color: var(--light-font-color);
     font-weight: 500;
-    font-size: 24px;
+    font-size: var(--header-font-size);
     line-height: 23px;
     white-space: nowrap;
     max-width: 100%; /* 1 */
@@ -84,27 +84,28 @@
 
 .bottom-div-left {
     z-index:0;
-    background-color:var(--main-border-color);
+    background-color:var(--main-div-color);
     position: absolute;
     left:588px;
-    top:984px;
+    top:1014px;
     width: 888px;
-    height: 84px;
+    height: 54px;
+
 
 }
 
 .bottom-div-right {
-    background-color:var(--main-border-color);
+    background-color:var(--main-div-color);
     position: absolute;
     left:1488px;
-    top:984px;
+    top:1014px;
     width: 420px;
-    height: 84px;
+    height: 54px;
 }
 
 .bottom-div-partypoker-left {
     z-index:0;
-    background-color:var(--main-border-color);
+    background-color:var(--main-div-color);
     position: absolute;
     left:634px;
     top:984px;
@@ -113,204 +114,117 @@
 
 }
 
-/*GLOBAL BOTTOM TEXT LEFT*/
+/*-----------------------LEFT BOTTOM SPAN FONT AND COLOR SETTINGS-----------------------*/
 
-.span-bottom-text-left {
-    font-size:26px;
-    font-weight:300;
-    position: absolute;
-    top: 3px;
-    left: 12px;
-}
-
-.bottom-value-left{
-    font-size:30px;
-    font-weight:500;
-    position: absolute;
-    left:12px;
-    top:-26px;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-
-}
-
-/*GLOBAL BOTTOM TEXT RIGHT*/
-
-.span-bottom-text-right {
-    font-size:26px;
-    font-weight:300;
-    position: absolute;
-    top: 3px;
-    right: 12px;
-
-}
-
-.bottom-value-right{
-    font-size:30px;
-    font-weight:500;
-    position: absolute;
-    right:12px;
-    top:-22px;
-
-}
-
-/*-----------------------BOTTOM DIV POSITON SETTINGS-----------------------*/
-
-/* LATEST DONATIONS */
 
 .donation {
-    position: absolute;
-    top: 990px;
-    left: 588px;
-    height: 24px;
-    width: 288px;
+    position:absolute;
+    top:0px;
+    left:-1px;
+    font-size:var(--header-font-size);
+    font-weight:300;
+
+
 }
 
-.donation-value-div
-{
+.donation-value {
     position: absolute;
-    top: 1020px;
-    left: 588px;
-    height: 48px;
-    width: 288px;
-}
+    bottom: -14px;
+    left: -1px;
+    font-size: var(--bottom-text-font-size);
+    font-weight:500;
 
-.donation-partypoker {
-    position: absolute;
-    top: 990px;
-    left: 634px;
-    height: 24px;
-    width: 272px;
 }
-
-.donation-value-div-partypoker{
-    position: absolute;
-    top: 1020px;
-    left: 634px;
-    height: 48px;
-    width: 272px;
-}
-
-/*TOP DONATION*/
 
 .top-donation {
-    position: absolute;
-    top: 990px;
-    left: 888px;
-    height: 24px;
-    width: 288px;
+    position:absolute;
+    top:0px;
+    left:268px;
+    font-size:var(--header-font-size);
+    font-weight:300;
+
 }
 
-.top-donation-value-div{
+.top-donation-value {
     position: absolute;
-    top: 1020px;
-    left: 888px;
-    height: 48px;
-    width: 288px;
+    bottom: -14px;
+    left: 268px;
+    font-size: var(--bottom-text-font-size);
+    font-weight:500;
 }
 
-.top-donation-partypoker {
-    position: absolute;
-    top: 990px;
-    left: 906px;
-    height: 24px;
-    width: 272px;
+
+.latest-subscriber {
+    position:absolute;
+    top:0px;
+    left:585px;
+    font-size:var(--header-font-size);
+    font-weight:300;
+
 }
 
-.top-donation-value-div-partypoker{
+.latest-subscriber-value {
     position: absolute;
-    top: 1020px;
-    left: 906px;
-    height: 48px;
-    width: 272px;
+    bottom: -14px;
+    left: 585px;
+    font-size: var(--bottom-text-font-size);
+    font-weight:500;
 }
 
-/* LATEST SUBSCRIBER*/
+/*-----------------------RIGHT BOTTOM SPAN FONT AND COLOR SETTINGS-----------------------*/
+.todays-buyins {
+    position:absolute;
+    top:0px;
+    right:253px;
+    font-size:var(--header-font-size);
+    font-weight:300;
+    text-align:right;
 
-.subscriber {
-    position: absolute;
-    top: 990px;
-    left: 1188px;
-    height: 24px;
-    width: 288px;
 }
 
-.subscriber-value-div{
+.todays-buyins-value {
     position: absolute;
-    top: 1020px;
-    left: 1188px;
-    height: 48px;
-    width: 288px;
+    bottom: -14px;
+    right:253px;
+    font-size: var(--bottom-text-font-size);
+    font-weight:500;
+    text-align:right;
 }
 
-.subscriber-partypoker {
-    position: absolute;
-    top: 990px;
-    left: 1178px;
-    height: 24px;
-    width: 272px;
+.todays-cashes {
+    position:absolute;
+    top:0px;
+    right:106px;
+    font-size:var(--header-font-size);
+    font-weight:300;
+    text-align:right;
+
 }
 
-.subscriber-value-div-partypoker{
+.todays-cashes-value {
     position: absolute;
-    top: 1020px;
-    left: 1178px;
-    height: 48px;
-    width: 272px;
+    bottom: -14px;
+    right:106px;
+    font-size: var(--bottom-text-font-size);
+    font-weight:500;
+    text-align:right;
 }
 
-/* BUY-INS */
+.bankroll {
+    position:absolute;
+    top:0px;
+    right:-1px;
+    font-size:var(--header-font-size);
+    font-weight:300;
+    text-align:right;
 
-.buyins {
-    position: absolute;
-    top: 990px;
-    left: 1488px;
-    height: 24px;
-    width: 132px;
 }
 
-.buyins-value-div{
+.bankroll-value {
     position: absolute;
-    top: 1020px;
-    left: 1488px;
-    height: 48px;
-    width: 132px;
+    bottom: -14px;
+    right: -1px;
+    font-size: var(--bottom-text-font-size);
+    font-weight:500;
+    text-align:right;
 }
-
-/* CASHES */
-
-.cashes {
-    position: absolute;
-    top: 990px;
-    left: 1632px;
-    height: 24px;
-    width: 132px;
-}
-
-.cashes-value-div{
-    position: absolute;
-    top: 1020px;
-    left: 1632px;
-    height: 48px;
-    width: 132px;
-}
-
-/* PROFIT */
-
-.profit {
-    position: absolute;
-    top: 990px;
-    left: 1776px;
-    height: 24px;
-    width: 132px;
-}
-
-.profit-value-div{
-    position: absolute;
-    top: 1020px;
-    left: 1776px;
-    height: 48px;
-    width: 132px;
-}
-

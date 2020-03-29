@@ -8,18 +8,23 @@ body {
 	--light-font-color:#DAD8EB;
 	--dark-font-color:#2B2A2E;
 	--main-border-color:#DAD8EB;
-	--main-font:'Teko', sans-serif;
+	--main-div-color:transparent;
+
+    --main-font:'Teko', sans-serif;
+    --header-font-size:24px;
+    --bottom-text-font-size:30px;
 
 	background-color: transparent;
 	margin: 0;
 	font-family: var(--main-font);
-	color: var(--main-bg-color);
-	font-size: 24px;
+	color: var(--light-font-color);
+	font-size: var(--header-font-size);
 	/* text-shadow: 2px 2px 1px #000; /*
     /*overflow: hidden;*/
 }
 
 /* TESTING */
 div {
-	border: 1px solid red;
+	border: 0px solid red;
 }
+
