@@ -26,5 +26,9 @@ body {
 /* TESTING */
 div {
 	border: 0px solid red;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
 }
 

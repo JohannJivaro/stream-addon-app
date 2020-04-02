@@ -86,9 +86,9 @@
     z-index:0;
     background-color:var(--main-div-color);
     position: absolute;
-    left:588px;
+    left:610px;
     top:1004px;
-    width: 888px;
+    width: 866px;
     height: 54px;
 
 
@@ -121,6 +121,7 @@
     position:absolute;
     top:0px;
     left:-1px;
+    width:276px;
     font-size:var(--header-font-size);
     font-weight:300;
 
@@ -131,6 +132,7 @@
     position: absolute;
     bottom: -14px;
     left: -1px;
+    width:276px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
 
@@ -139,7 +141,8 @@
 .top-donation {
     position:absolute;
     top:0px;
-    left:268px;
+    left:288px;
+    width:276px;
     font-size:var(--header-font-size);
     font-weight:300;
 
@@ -148,7 +151,8 @@
 .top-donation-value {
     position: absolute;
     bottom: -14px;
-    left: 268px;
+    left: 288px;
+    width:276px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
 }
@@ -157,7 +161,8 @@
 .latest-subscriber {
     position:absolute;
     top:0px;
-    left:585px;
+    left:576px;
+    width:276px;
     font-size:var(--header-font-size);
     font-weight:300;
 
@@ -166,7 +171,8 @@
 .latest-subscriber-value {
     position: absolute;
     bottom: -14px;
-    left: 585px;
+    left: 576px;
+    width:276px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
 }
