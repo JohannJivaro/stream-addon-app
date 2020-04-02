@@ -89,7 +89,7 @@
     left:610px;
     top:1004px;
     width: 866px;
-    height: 54px;
+    height: 66px;
 
 
 }
@@ -100,7 +100,7 @@
     left:1488px;
     top:1004px;
     width: 420px;
-    height: 54px;
+    height: 66px;
 }
 
 .bottom-div-partypoker-left {
@@ -130,7 +130,7 @@
 
 .donation-value {
     position: absolute;
-    bottom: -14px;
+    bottom: -1px;
     left: -1px;
     width:276px;
     font-size: var(--bottom-text-font-size);
@@ -150,7 +150,7 @@
 
 .top-donation-value {
     position: absolute;
-    bottom: -14px;
+    bottom: -1px;
     left: 288px;
     width:276px;
     font-size: var(--bottom-text-font-size);
@@ -170,7 +170,7 @@
 
 .latest-subscriber-value {
     position: absolute;
-    bottom: -14px;
+    bottom: -1px;
     left: 576px;
     width:276px;
     font-size: var(--bottom-text-font-size);
@@ -190,7 +190,7 @@
 
 .todays-buyins-value {
     position: absolute;
-    bottom: -14px;
+    bottom: -1px;
     right:253px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
@@ -209,7 +209,7 @@
 
 .todays-cashes-value {
     position: absolute;
-    bottom: -14px;
+    bottom: -1px;
     right:106px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
@@ -228,7 +228,7 @@
 
 .bankroll-value {
     position: absolute;
-    bottom: -14px;
+    bottom: -1px;
     right: -1px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
