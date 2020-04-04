@@ -135,6 +135,11 @@
     width:276px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
+    border: 1px solid red;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
 
 }
 
@@ -155,6 +160,11 @@
     width:276px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
+    border: 1px solid red;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
 }
 
 
@@ -175,6 +185,11 @@
     width:276px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
+    border: 1px solid red;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
 }
 
 /*-----------------------RIGHT BOTTOM SPAN FONT AND COLOR SETTINGS-----------------------*/
