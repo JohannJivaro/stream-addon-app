@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daniel Mar</title>
+    <link href="css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tourney-info.css">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link crossorigin="anonymous" href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap" rel="stylesheet">
+
+</head>
+<body ng-app="app" ng-controller="AppCtrl as vm">
+
+
+<!-- Main Container -->
+
+<div class="container-closeup">
+
+    <!--Main Social Media-->
+    <div class="social-media">@djaniel88
+    </div>
+    <!-- Live For Timer -->
+
+    <div class="live-for">{{ vm.data.chronoUp }}
+    </div>
+
+    <!-- Music -->
+    <div class="spotify">
+        <p class="artist">{{ vm.data.artist }}</p>
+        <p class="songname">{{ vm.data.songname }}</p>
+
+    </div>
+
+    <!-- Bottom text div -->
+    <div class="bottom-div-left">
+        <div class="donation">Latest Donation</div>
+        <div class="donation-value">{{ vm.data.latestDonation }}</div>
+        <div class="top-donation">Top Donation This Month</div>
+        <div class="top-donation-value">{{ vm.data.topDonation }}</div>
+        <div class="latest-subscriber">Latest Subscriber</div>
+        <div class="latest-subscriber-value">{{ vm.data.latestSubscriber }}</div>
+    </div>
+    <div class="bottom-div-right">
+        <div class="todays-buyins">Today's Buy-ins</div>
+        <div class="todays-buyins-value">${{ vm.data.buyIns | number }}</div>
+        <div class="todays-cashes">Today's Cashes</div>
+        <div class="todays-cashes-value">${{ vm.data.cashes | number }}</div>
+        <div class="bankroll">Bankroll</div>
+        <div class="bankroll-value">${{ vm.data.bankroll | number }}</div>
+    </div>
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="angular/angular.min.js"></script>
+
+    <script src="app.js"></script>
+    <!--<script src="js/app.js" type="text/javascript"></script> -->
+    <script src="js/timer.js" type="text/javascript"></script>
+    <script src="js/slides.js" type="text/javascript"></script>
+    <script language="javascript">
+        //
+        var data = new Array();
+        function copy() {
+
+            data = document.getElementById('add1').value;
+            document.getElementById('startingbr').innerHTML = data;
+            document.getElementById('startingbr').innerHTML = document.getElementById('add1').value;
+            //                    return true;
+        }
+    </script>
+</div>
+</body>
+</html>

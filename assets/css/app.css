@@ -16,6 +16,12 @@
     background: url("../img/overlay-partypoker.svg") no-repeat;
 }
 
+.container-closeup {
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    background: url("../img/closeup.svg") no-repeat;
+}
 /* SOCIAL MEDIA */
 
 .social-media{
