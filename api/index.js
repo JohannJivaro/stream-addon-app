@@ -109,6 +109,19 @@ app.get('/songname', cors(), (req, res, next) => {
     });
 });
 
+// ChronoUp Route
+app.get('/chrono-up', cors(), (req, res, next) => {
+    const path = '../../Program Files (x86)/Snaz/TextFiles/ChronoUp.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read songname file');
+        }
+
+        return res.json(data);
+    });
+});
+
 // ChronoDown Route
 app.get('/chrono-down', cors(), (req, res, next) => {
     const path = '../../Program Files (x86)/Snaz/TextFiles/ChronoDown.txt';
