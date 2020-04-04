@@ -109,9 +109,9 @@ app.get('/songname', cors(), (req, res, next) => {
     });
 });
 
-// ChronoUP Route
-app.get('/chrono-up', cors(), (req, res, next) => {
-    const path = '../../Program Files (x86)/Snaz/TextFiles/ChronoUp.txt';
+// ChronoDown Route
+app.get('/chrono-down', cors(), (req, res, next) => {
+    const path = '../../Program Files (x86)/Snaz/TextFiles/ChronoDown.txt';
 
     fs.readFile(path, 'utf8', (error, data) => {
         if (error) {
@@ -121,6 +121,7 @@ app.get('/chrono-up', cors(), (req, res, next) => {
         return res.json(data);
     });
 });
+
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

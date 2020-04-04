@@ -40,7 +40,7 @@
 			latestSubscriber: "No Update",
 			artist: "IIIIIot Playing",
 			songname: "Not Playing",
-
+			chronoDown: "00:00:00",
 
 		};
 
@@ -62,6 +62,7 @@
 			getLatestSubscriber();
 			getArtist();
 			getSongname();
+			getChronoDown
 
 
 			setDataWatcher();
@@ -166,6 +167,17 @@
             );
         }
 
+        function getChronoDown() {
+            $http.get(`${apiPath}/chrono-down`).then(
+                function successCallback(response) {
+                    vm.data.chronoDown = response.data;
+                },
+                function errorCallback(response) {
+                    console.log('error', response);
+                },
+            );
+        }
+
 
 
       	function setDataWatcher() {
@@ -173,6 +185,7 @@
 				getChronoUp();
 				getArtist();
 				getSongname();
+				getChronoDown();
 			}, 1000);
 
 			$interval(function () {

@@ -22,6 +22,13 @@
     display: block;
     background: url("../img/closeup.svg") no-repeat;
 }
+
+.container-countdown {
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    background: url("../img/countdown.svg") no-repeat;
+}
 /* SOCIAL MEDIA */
 
 .social-media{
@@ -85,6 +92,39 @@
 
 
 }
+
+/* Countdown */
+
+.countdown {
+    position: absolute;
+    top: 788px;
+    left: 1675px;
+    width:221px;
+    height:178px;
+    text-align: right;
+    color: var(--light-font-color);
+}
+
+.live-in{
+    position: absolute;
+    text-align:right;
+    top: -35px;
+    left:0px;
+    font-size: 75px;
+    font-weight: 300;
+    color: var(--light-font-color);
+}
+
+.live-in-value{
+    position: absolute;
+    top:24px;
+    left:0px;
+    color: var(--light-font-color);
+    font-size: 75px;
+    font-weight: 500;
+
+}
+
 
 /*-----------------------BOTTOM DIV FONT AND COLOR SETTINGS-----------------------*/
 
