@@ -34,6 +34,7 @@
 			chronoUp: "44:44:44",
 			buyIns: 0,
 			cashes: 0,
+			yesterday: 0,
 			bankroll: 0,
 			latestDonation: "No Update",
 			topDonation: "No Update",
@@ -56,6 +57,7 @@
 			getChronoUp();
 			getBuyIns();
 			getCashes();
+			getYesterday();
 			getBankroll();
 			getLatestDonation();
 			getTopDonation();
@@ -100,6 +102,17 @@
 				},
 			);
 		}
+
+        function getYesterday() {
+            $http.get(`${apiPath}/yesterday`).then(
+                function successCallback(response) {
+                    vm.data.yesterday = response.data;
+                },
+                function errorCallback(response) {
+                    console.log('error', response);
+                },
+            );
+        }
 
 		function getBankroll() {
 			$http.get(`${apiPath}/bankroll`).then(

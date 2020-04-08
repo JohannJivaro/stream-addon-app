@@ -31,6 +31,19 @@ app.get('/cashes', cors(), (req, res, next) => {
     });
 });
 
+// Yesterday Route
+app.get('/yesterday', cors(), (req, res, next) => {
+    const path = '../../Users/Daníel Már/Desktop/yesterday.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read cashes file');
+        }
+
+        return res.json(data);
+    });
+});
+
 // Bankroll Route
 app.get('/bankroll', cors(), (req, res, next) => {
     const path = '../../Users/Daníel Már/Desktop/bankroll.txt';

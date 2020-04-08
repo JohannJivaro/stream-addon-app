@@ -239,7 +239,7 @@
 .todays-buyins {
     position:absolute;
     top:0px;
-    right:253px;
+    right:312px;
     font-size:var(--header-font-size);
     font-weight:300;
     text-align:right;
@@ -249,7 +249,7 @@
 .todays-buyins-value {
     position: absolute;
     bottom: -1px;
-    right:253px;
+    right:312px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
     text-align:right;
@@ -258,7 +258,7 @@
 .todays-cashes {
     position:absolute;
     top:0px;
-    right:106px;
+    right:185px;
     font-size:var(--header-font-size);
     font-weight:300;
     text-align:right;
@@ -268,7 +268,26 @@
 .todays-cashes-value {
     position: absolute;
     bottom: -1px;
-    right:106px;
+    right:185px;
+    font-size: var(--bottom-text-font-size);
+    font-weight:500;
+    text-align:right;
+}
+
+.yesterday {
+    position:absolute;
+    top:0px;
+    right:87px;
+    font-size:var(--header-font-size);
+    font-weight:300;
+    text-align:right;
+
+}
+
+.yesterday-value {
+    position: absolute;
+    bottom: -1px;
+    right: 87px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
     text-align:right;
