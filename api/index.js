@@ -96,6 +96,19 @@ app.get('/latest-subscriber', cors(), (req, res, next) => {
     });
 });
 
+// Subscribers Today route
+app.get('/subscribers-today', cors(), (req, res, next) => {
+    const path = '../../Users/Daníel Már/Documents/Twitch/Muxy/session_subscriber_count.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read latest subscriber file');
+        }
+
+        return res.json(data);
+    });
+});
+
 // Artist Route
 app.get('/artist', cors(), (req, res, next) => {
     const path = '../../Program Files (x86)/OBSCurrentSongV1.28/artist.txt';

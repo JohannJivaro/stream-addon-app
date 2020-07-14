@@ -167,7 +167,7 @@
     position:absolute;
     top:0px;
     left:-1px;
-    width:276px;
+    width:204px;
     font-size:var(--header-font-size);
     font-weight:300;
 
@@ -178,7 +178,7 @@
     position: absolute;
     bottom: -1px;
     left: -1px;
-    width:276px;
+    width:204px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
     overflow: hidden !important;
@@ -191,8 +191,8 @@
 .top-donation {
     position:absolute;
     top:0px;
-    left:288px;
-    width:276px;
+    left:208px;
+    width:204px;
     font-size:var(--header-font-size);
     font-weight:300;
 
@@ -201,8 +201,8 @@
 .top-donation-value {
     position: absolute;
     bottom: -1px;
-    left: 288px;
-    width:276px;
+    left: 208px;
+    width:204px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
     overflow: hidden !important;
@@ -215,8 +215,8 @@
 .latest-subscriber {
     position:absolute;
     top:0px;
-    left:576px;
-    width:276px;
+    left:464px;
+    width:204px;
     font-size:var(--header-font-size);
     font-weight:300;
 
@@ -225,8 +225,8 @@
 .latest-subscriber-value {
     position: absolute;
     bottom: -1px;
-    left: 576px;
-    width:276px;
+    left: 464px;
+    width:204px;
     font-size: var(--bottom-text-font-size);
     font-weight:500;
     overflow: hidden !important;
@@ -234,6 +234,36 @@
     white-space: nowrap !important;
     word-wrap: normal !important; /* 2 */
 }
+
+.subscribers-today {
+    position:absolute;
+    top:0px;
+    left:686px;
+    width:178px;
+    font-size:var(--header-font-size);
+    font-weight:300;
+
+}
+
+.subscribers-today-value {
+    position: absolute;
+    bottom: -1px;
+    left: 686px;
+    width:178px;
+    font-size: var(--bottom-text-font-size);
+    font-weight:500;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
+}
+
+
+
+
+
+
+
 
 /*-----------------------RIGHT BOTTOM SPAN FONT AND COLOR SETTINGS-----------------------*/
 .todays-buyins {

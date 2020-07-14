@@ -39,6 +39,7 @@
 			latestDonation: "No Update",
 			topDonation: "No Update",
 			latestSubscriber: "No Update",
+			subscribersToday: "No Update",
 			artist: "IIIIIot Playing",
 			songname: "Not Playing",
 			chronoDown: "00:00:00",
@@ -62,6 +63,7 @@
 			getLatestDonation();
 			getTopDonation();
 			getLatestSubscriber();
+			getSubscribersToday();
 			getArtist();
 			getSongname();
 			getChronoDown
@@ -158,6 +160,17 @@
             );
         }
 
+        function getSubscribersToday() {
+            $http.get(`${apiPath}/subscribers-today`).then(
+                function successCallback(response) {
+                    vm.data.subscribersToday = response.data;
+                },
+                function errorCallback(response) {
+                    console.log('error', response);
+                },
+            );
+        }
+
         function getArtist() {
             $http.get(`${apiPath}/artist`).then(
                 function successCallback(response) {
@@ -207,6 +220,7 @@
 				getBankroll();
 				getLatestDonation();
 				getTopDonation();
+				getSubscribersToday();
 			}, 30000);
 		}
 	}
