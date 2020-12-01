@@ -133,7 +133,7 @@
     background-color:var(--main-div-color);
     position: absolute;
     left:610px;
-    top:1004px;
+    top:1010px;
     width: 866px;
     height: 66px;
 
@@ -144,7 +144,7 @@
     background-color:var(--main-div-color);
     position: absolute;
     left:1488px;
-    top:1004px;
+    top:1010px;
     width: 420px;
     height: 66px;
 }
