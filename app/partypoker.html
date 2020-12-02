@@ -18,8 +18,8 @@
 <div class="container-partypoker">
 
     <!--Main Social Media-->
-    <div class="social-media">@djaniel88
-    </div>
+    <!--<div class="social-media">@danielmarpoker
+    </div>-->
     <!-- Live For Timer -->
 
     <div class="live-for">{{ vm.data.chronoUp }}
@@ -32,64 +32,31 @@
 
     </div>
 
-
     <!-- Bottom text div -->
-    <div class="bottom-div-partypoker-left"></div>
-    <div class="bottom-div-right"></div>
-
-    <!-- Donations -->
-    <div class="donation-partypoker">
-        <span class="span-bottom-text-left">Latest Donation</span>
+    <div class="bottom-div-left">
+        <!--<div class="donation">Latest Donation</div>-->
+        <!--<div class="donation-value">{{ vm.data.latestDonation }}</div>-->
+        <!--<div class="top-donation">Top Donation This Month</div>-->
+        <!--<div class="top-donation-value">{{ vm.data.topDonation }}</div>-->
+        <!--<div<div class="latest-subscriber">Latest Subscriber</div>-->
+        <!--<div<div class="latest-subscriber-value">{{ vm.data.latestSubscriber }}</div>-->
+        <!--<div<div class="subscribers-today">Subscribers Today</div>-->
+        <!--<div<div class="subscribers-today-value">{{ vm.data.subscribersToday }}</div>-->
+    </div>
+    <div class="bottom-div-right">
+        <div class="todays-buyins">Today's Buy-ins</div>
+        <div class="todays-buyins-value">${{ vm.data.buyIns | number }}</div>
+        <div class="todays-cashes">Today's Cashes</div>
+        <div class="todays-cashes-value">${{ vm.data.cashes | number }}</div>
+        <div class="yesterday">Yesterday</div>
+        <div class="yesterday-value">${{ vm.data.yesterday | number }}</div>
+        <div class="bankroll">Bankroll</div>
+        <div class="bankroll-value">${{ vm.data.bankroll | number }}</div>
     </div>
 
-    <div class="donation-value-div-partypoker">
-        <p class="bottom-value-left">{{ vm.data.latestDonation }}</p>
-    </div>
 
-    <!-- Top Donations -->
-    <div class="top-donation-partypoker">
-        <span class="span-bottom-text-left">Top Donation This Month</span>
-    </div>
 
-    <div class="top-donation-value-div-partypoker">
-        <p class="bottom-value-left">{{ vm.data.topDonation }}</p>
-    </div>
 
-    <!-- Subscribers -->
-    <div class="subscriber-partypoker">
-        <span class="span-bottom-text-left">Latest Subscriber</span>
-    </div>
-
-    <div class="subscriber-value-div-partypoker">
-        <p class="bottom-value-left">{{ vm.data.latestSubscriber }}</p>
-    </div>
-
-    <!-- Buyins -->
-    <div class="buyins">
-        <span class="span-bottom-text-right">Todays Buy-ins</span>
-    </div>
-
-    <div class="buyins-value-div">
-        <p class="bottom-value-right">${{ vm.data.buyIns | number }}</p>
-    </div>
-
-    <!-- Cashes -->
-    <div class="cashes">
-        <span class="span-bottom-text-right">Todays Cashes</span>
-    </div>
-
-    <div class="cashes-value-div">
-        <p class="bottom-value-right">${{ vm.data.cashes | number }}</p>
-    </div>
-
-    <!-- Profit -->
-    <div class="bankroll">
-        <span class="span-bottom-text-right">Bankroll</span>
-    </div>
-
-    <div class="bankroll-value-div">
-        <p class="bottom-value-right">${{ vm.data.bankroll | number }}</p>
-    </div>
 
     <!-- Scripts -->
     <script src="jquery/dist/jquery.min.js"></script>
