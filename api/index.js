@@ -189,7 +189,7 @@ app.get('/chrono-down', cors(), (req, res, next) => {
 // Active Tournaments Route
 
 app.get('/tournament1', cors(), (req, res, next) => {
-    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament1.txt';
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/mtt1.txt';
 
     fs.readFile(path, 'utf8', (error, data) => {
         if (error) {
@@ -201,7 +201,7 @@ app.get('/tournament1', cors(), (req, res, next) => {
 });
 
 app.get('/tournament2', cors(), (req, res, next) => {
-    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament2.txt';
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/mtt2.txt';
 
     fs.readFile(path, 'utf8', (error, data) => {
         if (error) {
@@ -213,7 +213,7 @@ app.get('/tournament2', cors(), (req, res, next) => {
 });
 
 app.get('/tournament3', cors(), (req, res, next) => {
-    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament3.txt';
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/mtt3.txt';
 
     fs.readFile(path, 'utf8', (error, data) => {
         if (error) {
@@ -225,7 +225,7 @@ app.get('/tournament3', cors(), (req, res, next) => {
 });
 
 app.get('/tournament4', cors(), (req, res, next) => {
-    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament4.txt';
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/mtt4.txt';
 
     fs.readFile(path, 'utf8', (error, data) => {
         if (error) {
@@ -237,7 +237,7 @@ app.get('/tournament4', cors(), (req, res, next) => {
 });
 
 app.get('/tournament5', cors(), (req, res, next) => {
-    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament5.txt';
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/mtt5.txt';
 
     fs.readFile(path, 'utf8', (error, data) => {
         if (error) {
@@ -249,7 +249,7 @@ app.get('/tournament5', cors(), (req, res, next) => {
 });
 
 app.get('/tournament6', cors(), (req, res, next) => {
-    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament6.txt';
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/mtt6.txt';
 
     fs.readFile(path, 'utf8', (error, data) => {
         if (error) {
