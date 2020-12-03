@@ -160,6 +160,105 @@ app.get('/chrono-down', cors(), (req, res, next) => {
         return res.json(data);
     });
 });
+// Today's buy-ins Route
+
+app.get('/chrono-down', cors(), (req, res, next) => {
+    const path = '../../Program Files (x86)/Snaz/TextFiles/ChronoDown.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read songname file');
+        }
+
+        return res.json(data);
+    });
+});
+
+app.get('/chrono-down', cors(), (req, res, next) => {
+    const path = '../../Program Files (x86)/Snaz/TextFiles/ChronoDown.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read songname file');
+        }
+
+        return res.json(data);
+    });
+});
+
+// Active Tournaments Route
+
+app.get('/tournament1', cors(), (req, res, next) => {
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament1.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read tournament file');
+        }
+
+        return res.json(data);
+    });
+});
+
+app.get('/tournament2', cors(), (req, res, next) => {
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament2.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read tournament file');
+        }
+
+        return res.json(data);
+    });
+});
+
+app.get('/tournament3', cors(), (req, res, next) => {
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament3.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read tournament file');
+        }
+
+        return res.json(data);
+    });
+});
+
+app.get('/tournament4', cors(), (req, res, next) => {
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament4.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read tournament file');
+        }
+
+        return res.json(data);
+    });
+});
+
+app.get('/tournament5', cors(), (req, res, next) => {
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament5.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read tournament file');
+        }
+
+        return res.json(data);
+    });
+});
+
+app.get('/tournament6', cors(), (req, res, next) => {
+    const path = '../../Users/Daníel Már/Desktop/Tournament Text/tournament6.txt';
+
+    fs.readFile(path, 'utf8', (error, data) => {
+        if (error) {
+            res.status(500, 'Could not read tournament file');
+        }
+
+        return res.json(data);
+    });
+});
 
 
 app.listen(port, () => {

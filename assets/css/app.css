@@ -341,3 +341,75 @@
     font-weight:500;
     text-align:right;
 }
+
+/*-----------------------ACTIVE TOURNAMENTS-----------------------*/
+
+.active-tournaments{
+    position:absolute;
+    top:396px;
+    left:12px;
+    font-size:var(--header-font-size);
+    font-weight:300;
+    text-align:right;
+}
+
+/* -------------------- Text utils --------------------  */
+
+/**
+ * Text layout
+ */
+.u-textUpper {
+    text-transform: uppercase !important;
+}
+
+.u-textLower {
+    text-transform: lowercase !important;
+}
+
+.u-textCenter {
+    text-align: center !important;
+}
+
+.u-textLeft {
+    text-align: left !important;
+}
+
+.u-textRight {
+    text-align: right !important;
+}
+
+.u-textMiddle {
+    vertical-align: middle;
+}
+
+.u-cursorPointer {
+    cursor: pointer;
+}
+
+/**
+ * Text truncation
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+.u-textTruncate {
+    max-width: 100%; /* 1 */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
+}
+
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+.u-textBreak {
+    word-wrap: break-word !important;
+}

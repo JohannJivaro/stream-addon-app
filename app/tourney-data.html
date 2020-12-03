@@ -1,52 +1,88 @@
-
+<!DOCTYPE html>
+<!-- © NightDev 2015 -->
+<html>
+<head>
+    <title>Tourney Info</title>
+    <meta charset="UTF-8" />
+    <link href="css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tourney-info.css">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link crossorigin="anonymous" href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tourney-info.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body ng-app="app" ng-controller="AppCtrl as vm">
 <div class="Table">
     <div class="Row">
-        <div class="tournament itm">
-            <p><i class="fa fa-money"></i> <span id="haukur">$8.80</span> NL Hold’em [1R1A]</p>
-        </div> 
-        <div class="position itm">
-            <p>110 of 1054</p>
+        <div class="tournament">
+            <p>{{ vm.data.tournament1 }}</p>
+        </div>
+        <div class="position">
+            <p></p>
         </div>
     </div>
     <div class="Row">
         <div class="tournament">
-            <p>$8.80 NL Hold’em [1R1A]</p>
+            <p>{{ vm.data.tournament2 }}</p>
         </div>
         <div class="position">
-            <p>110 of 1054</p>
+            <p></p>
         </div>
     </div>
     <div class="Row">
         <div class="tournament">
-            <p>$8.80 NL Hold’em [1R1A]</p>
+            <p>{{ vm.data.tournament3 }}</p>
         </div>
         <div class="position">
-            <p>110 of 1054</p>
+            <p></p>
         </div>
     </div>
     <div class="Row">
         <div class="tournament">
-            <p>$8.80 NL Hold’em [1R1A]</p>
+            <p>{{ vm.data.tournament4 }}</p>
         </div>
         <div class="position">
-            <p>110 of 1054</p>
+            <p></p>
         </div>
     </div>
     <div class="Row">
         <div class="tournament">
-            <p>$8.80 NL Hold’em [1R1A]</p>
+            <p>{{ vm.data.tournament5 }}</p>
         </div>
         <div class="position">
-            <p>110 of 1054</p>
+            <p></p>
         </div>
     </div>
     <div class="Row">
         <div class="tournament">
-            <p>$8.80 NL Hold’em [1R1A]</p>
+            <p>{{ vm.data.tournament6 }}</p>
         </div>
         <div class="position">
-            <p>110 of 1054</p>
+            <p></p>
         </div>
-    </div>
+
 
 </div>
+
+<!-- Scripts -->
+<script src="jquery/dist/jquery.min.js"></script>
+<script src="angular/angular.min.js"></script>
+
+<script src="app.js"></script>
+<!--<script src="js/app.js" type="text/javascript"></script> -->
+<script src="js/timer.js" type="text/javascript"></script>
+<script src="js/slides.js" type="text/javascript"></script>
+<script language="javascript">
+    //
+    var data = new Array();
+    function copy() {
+
+        data = document.getElementById('add1').value;
+        document.getElementById('startingbr').innerHTML = data;
+        document.getElementById('startingbr').innerHTML = document.getElementById('add1').value;
+        //                    return true;
+    }
+</script>
+</body>
+</html>
